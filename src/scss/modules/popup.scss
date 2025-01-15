@@ -1,0 +1,58 @@
+.fancybox__container {
+	max-width: 100% !important;
+	padding: 0 !important;
+}
+
+.fancybox__slide {
+	padding: 1.25rem;
+}
+
+.fancybox__backdrop {
+	background: rgba(37, 40, 51, 0.75);
+}
+
+.fancybox__content {
+	color: inherit;
+	background: none;
+	padding: 0;
+}
+
+.fancybox__content :focus:not(.carousel__button.is-close) {
+	outline: none;
+}
+
+.popup {
+	display: none;
+	width: 100%;
+	padding: 0;
+	background: none;
+	max-width: 61.5rem;
+
+	// .popup__body
+	&__body {
+		position: relative;
+		width: 100%;
+		border: rem(1) solid #565151;
+		background: #252833;
+		display: flex;
+		flex-direction: column;
+		padding: 1.56rem;
+		@media (min-width: $md5) {
+			padding: 2.5rem;
+		}
+	}
+
+	// .popup__title
+	&__title {
+		text-align: center;
+	}
+	// .popup__form
+	&__form {
+		display: flex;
+		flex-direction: column;
+		max-width: 40.9375rem;
+		width: 100%;
+		margin: 2rem auto 0;
+		gap: 0.94rem;
+	}
+}

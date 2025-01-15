@@ -1,0 +1,126 @@
+//============ МОДУЛИ ====================
+// @import "modules/popup";
+//============ МОДУЛИ ====================
+
+.title {
+	font-size: rem(56);
+	font-family: $font-cormorant;
+	font-style: italic;
+}
+
+.title-sm {
+	font-size: rem(30);
+	font-family: $font-cormorant;
+	font-style: italic;
+}
+
+.font-secondary {
+	font-family: $font-cormorant;
+}
+
+.subtitle {
+	font-size: 0.78em;
+	text-transform: uppercase;
+	letter-spacing: 3.25px;
+	color: #b2a69b;
+	line-height: 1.7;
+}
+
+// ._loading {
+// 	color: transparent;
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+// 		transform: translate(-50%, -50%);
+// 		width: 20px;
+// 		height: 20px;
+// 		border: 3px solid #fff;
+// 		border-bottom-color: transparent;
+// 		border-radius: 50%;
+// 		transform-origin: center;
+// 		animation: rotation 1s linear infinite;
+// 		z-index: 3;
+// 	}
+// }
+
+// @keyframes rotation {
+// 	0% {
+// 		transform: translate(-50%, -50%) rotate(0deg);
+// 	}
+// 	100% {
+// 		transform: translate(-50%, -50%) rotate(360deg);
+// 	}
+// }
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// Стилизация селекта
+// $selectBg: $orange;
+// $selectColor: $dark;
+
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+// ::selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	-webkit-box-shadow: none;
+// 	box-shadow: none;
+// }
+// ::-moz-selection {
+// 	color: $selectColor;
+// 	background-color: $selectBg;
+// 	box-shadow: none;
+// }
+
+// Стилизация скролла
+
+$scrollbarColor: $beige;
+$scrollbarHover: darken(
+	$color: $scrollbarColor,
+	$amount: 10,
+);
+
+::-webkit-scrollbar {
+	width: rem(8);
+}
+::-webkit-scrollbar-track {
+	background: #252833;
+}
+::-webkit-scrollbar-thumb {
+	background: $scrollbarColor;
+	border-radius: rem(8);
+	@media (any-hover: hover) {
+		&:hover {
+			background: $scrollbarHover;
+		}
+	}
+}
+
+//============ ОБЩИЕ ЭЛЕМЕНТЫ ============
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ======
