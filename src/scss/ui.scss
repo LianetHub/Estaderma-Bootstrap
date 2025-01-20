@@ -8,6 +8,12 @@
 	font-style: italic;
 }
 
+.title-md {
+	font-size: rem(36);
+	font-family: $font-cormorant;
+	font-style: italic;
+}
+
 .title-sm {
 	font-size: rem(30);
 	font-family: $font-cormorant;
@@ -24,6 +30,43 @@
 	letter-spacing: 3.25px;
 	color: #b2a69b;
 	line-height: 1.7;
+}
+
+.favorite-btn {
+	width: 1.5rem;
+	height: 1.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	&::before {
+		@extend %ic, .icon-heart;
+		transition: all 0.3s ease 0s;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fa7a93;
+		}
+	}
+	&.active {
+		&::before {
+			@extend %ic, .icon-heart-fill;
+			color: #fa7a93;
+			animation: pulse 0.3s ease-in-out;
+			@keyframes pulse {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.4);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+	}
 }
 
 // ._loading {

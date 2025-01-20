@@ -53,6 +53,11 @@ $(function () {
     $(document).on("click", function (e) {
         const $target = $(e.target);
         // Add your event logic here
+
+        // favorite btn
+        if ($target.is('.favorite-btn')) {
+            $target.toggleClass('active')
+        }
     });
 
 });
