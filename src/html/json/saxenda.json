@@ -1,0 +1,70 @@
+[
+    {
+        "className": "swiper-slide",
+        "image": "@img/Ozempic-ED.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Select options",
+        "name": "Ozempic 2.01mg / 1.5ml",
+        "currentPrice": "$ 321.00",
+        "oldPrice": "$ 480.00",
+        "cashback": "16.05 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/Wegovy-2.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "Wegovy 1mg",
+        "currentPrice": "$ 419.00",
+        "oldPrice": "$ 699.00",
+        "cashback": "20.95 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/saxenda22_456x456_3ee-1.webp",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Select options",
+        "name": "SAXENDA PEN 3.0ML",
+        "currentPrice": "$ 106.00",
+        "oldPrice": "$ 133.00",
+        "cashback": "5.3 $",
+        "labels": [
+            {
+                "text": "sold",
+                "type": "danger"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/saxenda11_456x456_3ee.webp",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "SAXENDA PEN 3.0ML (5 PENS)",
+        "currentPrice": "$ 565.00",
+        "oldPrice": "$ 565.00",
+        "cashback": "28.25 $"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/saxenda-needle_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "SAXENDA PEN NEEDLE (5EA)",
+        "currentPrice": "$ 7.00",
+        "oldPrice": "$ 7.00",
+        "cashback": "0.35 $"
+    }
+]

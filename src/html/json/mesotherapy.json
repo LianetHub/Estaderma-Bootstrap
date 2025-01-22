@@ -1,0 +1,61 @@
+[
+    {
+        "className": "swiper-slide",
+        "image": "@img/sr.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "Dermaheal SR",
+        "currentPrice": "$ 123.00",
+        "cashback": "6.15 $"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/ED-caratfill.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "Caratfill Aurora",
+        "currentPrice": "$ 132.00",
+        "cashback": "6.6 $",
+        "labels": [
+            {
+                "text": "sold",
+                "type": "danger"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/ED-juve-face.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "Juve Face",
+        "currentPrice": "$ 111.00",
+        "oldPrice": "$ 168.00",
+        "cashback": "5.55 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/ED-Juveeyes.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "JUVE EYES",
+        "currentPrice": "$ 46.00",
+        "oldPrice": "$ 78.00",
+        "cashback": "2.3 $"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/Nefer-TiTi-1.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "1.st NEFER TI TI SOLUTION",
+        "currentPrice": "$ 116.00",
+        "cashback": "5.8 $"
+    }
+]

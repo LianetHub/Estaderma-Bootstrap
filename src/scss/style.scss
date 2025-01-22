@@ -36,9 +36,10 @@ $maxWidth: 1920; // Ширина макета
 $maxWidthContainer: rem(1280); // Максимальная ширина ограничивающего контейнера
 $containerPadding: 30;
 
-$text: #fff;
-$brown: #4b4036;
+$text: #4b4036;
 $beige: #fcf7ee;
+$red: #9f2124;
+$beige-dark: #e8d1bb;
 
 // Z-Index
 $ui-index-1: 1; // Для наполняющих элементов в общем потоке
@@ -56,13 +57,19 @@ body {
 	min-width: 320px;
 	min-height: 100%;
 	line-height: normal;
-
+	color: $text;
 	&.lock {
 		overflow: hidden;
 		@media (min-width: $md2) {
 			overflow: visible;
 		}
 	}
+}
+
+:root {
+	--bs-light-rgb: 232, 209, 187;
+	--bs-dark-rgb: 75, 64, 54;
+	--bs-danger-rgb: 159, 33, 36;
 }
 
 .container-xxl,
@@ -72,7 +79,7 @@ body {
 .container-sm,
 .container {
 	@media (min-width: $md0) {
-		max-width: rem(1510);
+		max-width: rem(1530);
 	}
 }
 
@@ -110,3 +117,166 @@ body {
 }
 
 // ========================================================
+
+@import "pages/home.scss";
+
+.product {
+	// .product__thumb
+	&__thumb {
+		position: relative;
+		overflow: hidden;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+			border-style: solid;
+			border-color: currentColor;
+			transition: all 0.3s linear;
+			z-index: 4;
+		}
+		&::before {
+			border-width: 0 0 rem(1) rem(1);
+			clip-path: inset(100% 100% 0% 0%);
+		}
+		&::after {
+			border-width: rem(1) rem(1) 0 0;
+			clip-path: inset(0% 0% 100% 100%);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&::before,
+				&::after {
+					clip-path: inset(0% 0% 0% 0%);
+				}
+				& .product__image {
+					& img {
+						transform: scale3d(1.1, 1.1, 1.1);
+					}
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				& .product__labels {
+					opacity: 0;
+					visibility: hidden;
+				}
+				.product__favorite-btn {
+					opacity: 1;
+					visibility: visible;
+				}
+				.product__btn {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	// .product__image
+	&__image {
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(249, 249, 249, 0.66);
+			opacity: 0;
+			visibility: hidden;
+			z-index: 2;
+			transition: opacity 0.3s ease 0s, visibility 0.3s ease;
+		}
+		& img {
+			transition: transform 0.3s ease;
+			width: 100%;
+		}
+	}
+	// .product__btn
+	&__btn {
+		opacity: 0;
+		z-index: 2;
+		width: calc(100% - rem(10));
+		overflow: hidden;
+		&::before {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			font-size: 1.75em;
+			opacity: 0;
+			visibility: hidden;
+			transform: translate3d(-50%, 0, 0);
+			transition: all 0.3s ease;
+		}
+		& span {
+			transition: all 0.3s ease;
+			display: block;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&::before {
+					transform: translate3d(-50%, -50%, 0);
+					top: 50%;
+					opacity: 1;
+					visibility: visible;
+				}
+				& span {
+					transform: translate3d(0, -200%, 0);
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+	}
+	// .product__favorite-btn
+	&__favorite-btn {
+		top: rem(16);
+		right: rem(16);
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease 0s, visibility 0.3s ease;
+	}
+	// .product__labels
+	&__labels {
+		top: rem(5);
+		right: rem(5);
+		font-size: rem(10);
+		letter-spacing: em(1, 10);
+		transition: opacity 0.3s ease 0s, visibility 0.3s ease;
+	}
+	// .product__label
+	&__label {
+		min-width: rem(50);
+		min-height: rem(25);
+	}
+	// .product__body
+	&__body {
+	}
+	// .product__name
+	&__name {
+		color: $text;
+		text-decoration: none;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	// .product__price
+	&__price {
+	}
+	// .product__price-old
+	&__price-old {
+	}
+	// .product__price-current
+	&__price-current {
+	}
+	// .product__cashback
+	&__cashback {
+	}
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "image": "@img/maxresdefault.jpg",
+        "time": "30/12/2024",
+        "datetime": "30-12-2024",
+        "type": "Blog",
+        "caption": "South Korea vs. Europe: Beauty Standards and How Aesthetic Treatments Can Help (Lips, Chin, Nose, and Jawline)",
+        "desc": "When examining the long list of beauty standards and aesthetic treatments available in..."
+    },
+    {
+        "image": "@img/Blog-Cover.png",
+        "time": "24/09/2024",
+        "datetime": "24-09-2024",
+        "type": "Blog",
+        "caption": "The Best Korean Biorevitalization Skincare Products! Restore Hydration, Boost Collagen & More!",
+        "desc": "Biorevitalization products are cosmetic or dermatological treatments that help rejuvenate the skin. Among..."
+    },
+    {
+        "image": "@img/Neck-hands-Mesotherapy-Blogcover.jpg",
+        "time": "05/09/2024",
+        "datetime": "24-09-2024",
+        "type": "Blog",
+        "caption": "Mesotherapy for Hands and Neck | Best Korean Brands, Tips & More",
+        "desc": "Mesotherapy is a minimally invasive cosmetic procedure and treatment. When partaking in mesotherapy,..."
+    }
+]

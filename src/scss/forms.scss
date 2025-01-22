@@ -1,3 +1,27 @@
+.form-control {
+	border-color: #e8d1bb;
+
+	text-transform: uppercase;
+	background: transparent;
+	border-radius: 0;
+	font-size: rem(18);
+	border-width: 0 0 rem(1) 0;
+	padding: em(20) em(60, 18) em(20) em(0);
+	text-overflow: ellipsis;
+	color: #fff;
+	&::placeholder {
+		color: #b2a69b;
+		opacity: 1;
+	}
+	&:focus {
+		color: #fff;
+		background-color: transparent;
+		border-color: #fff;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
 .btn {
 	--bs-btn-padding-x: clamp(1.25rem, 0.75rem + 2.5vw, 3.75rem);
 	--bs-btn-padding-y: #{rem(14)};

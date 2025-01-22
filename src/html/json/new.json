@@ -1,0 +1,132 @@
+[
+    {
+        "className": "swiper-slide",
+        "image": "@img/Lido-2-ED.jpg",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "JEIL Lidocaine 2%",
+        "currentPrice": "$ 48.00",
+        "oldPrice": "$ 48.00",
+        "cashback": "2.4 $",
+        "labels": [
+            {
+                "text": "sold",
+                "type": "danger"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/RejuvaFill-ED.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "Rejuvafill 100cc",
+        "currentPrice": "$ 229.00",
+        "oldPrice": "$ 229.00",
+        "cashback": "11.45 $"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/Hairna-exosome-ampoule-E.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "HAIRNA Exosome Booster Ampoule",
+        "currentPrice": "$ 251.00",
+        "oldPrice": "$ 251.00",
+        "cashback": "12.55 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/Ozempic-ED.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Select options",
+        "name": "Ozempic 2.01mg / 1.5ml",
+        "currentPrice": "$ 321.00",
+        "oldPrice": "$ 480.00",
+        "cashback": "16.05 $",
+        "labels": [
+            {
+                "text": "sold",
+                "type": "danger"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/Wegovy-ED.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "Wegovy 1mg",
+        "currentPrice": "$ 419.00",
+        "oldPrice": "$ 699.00",
+        "cashback": "20.95 $"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/HL.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "Dermaheal HL",
+        "currentPrice": "$ 123.00",
+        "oldPrice": "$ 123.00",
+        "cashback": "6.15 $"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/sr.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "Dermaheal SR",
+        "currentPrice": "$ 123.00",
+        "oldPrice": "$ 123.00",
+        "cashback": "6.15 $",
+        "labels": [
+            {
+                "text": "sold",
+                "type": "danger"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/HSR.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "Dermaheal HSR",
+        "currentPrice": "$ 139.00",
+        "oldPrice": "$ 139.00",
+        "cashback": "6.95 $",
+        "labels": [
+            {
+                "text": "sold",
+                "type": "danger"
+            }
+        ]
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/Muchcaine-plus-ED.png",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "Muchcaine 5% Plus",
+        "currentPrice": "$ 42.00",
+        "oldPrice": "$ 42.00",
+        "cashback": "2.1 $"
+    },
+    {
+        "className": "swiper-slide",
+        "image": "@img/VOM-Volume-ED.jpg",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "VOM M - Volume",
+        "currentPrice": "$ 32.00",
+        "oldPrice": "$ 32.00",
+        "cashback": "1.6 $"
+    }
+]

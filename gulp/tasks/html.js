@@ -63,7 +63,45 @@ export const html = () => {
                 })
             )
         )
-        .pipe(fileinclude())
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file',
+            context: {},
+            filters: {
+                loop: function (args) {
+                    const [templatePath, jsonPath] = args.split(',').map(arg => arg.trim().replace(/['"]/g, ''));
+                    const template = fs.readFileSync(templatePath, 'utf8');
+                    const jsonData = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+
+                    return jsonData.map(item => {
+                        let result = template;
+
+                        // Обработка простых значений
+                        for (const key in item) {
+                            const regex = new RegExp(`{{\\s*${key}\\s*}}`, 'g');
+                            result = result.replace(regex, item[key]);
+                        }
+
+                        // Обработка массивов
+                        result = result.replace(/{{#(\w+)}}([\s\S]+?){{\/\1}}/g, (match, arrayName, innerTemplate) => {
+                            if (item[arrayName] && Array.isArray(item[arrayName])) {
+                                return item[arrayName].map(subItem => {
+                                    let subResult = innerTemplate;
+                                    for (const subKey in subItem) {
+                                        const subRegex = new RegExp(`{{\\s*${subKey}\\s*}}`, 'g');
+                                        subResult = subResult.replace(subRegex, subItem[subKey]);
+                                    }
+                                    return subResult;
+                                }).join('');
+                            }
+                            return '';
+                        });
+
+                        return result;
+                    }).join('\n');
+                }
+            }
+        }))
         .pipe(app.plugins.replace(/@img\//g, "img/"))
         .pipe(app.plugins.if(app.isBuild, addWebpSources()))
         .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
