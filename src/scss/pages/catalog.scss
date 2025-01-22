@@ -1,0 +1,11 @@
+.catalog {
+	// .catalog__grid
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+	}
+	// .catalog__sidebar
+	&__sidebar {
+	}
+}

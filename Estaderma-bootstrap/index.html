@@ -25,97 +25,147 @@
 	<meta property="twitter:url" content="">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css?_v=20250122172535">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250122172535">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250122172535">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css?_v=20250122224915">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250122224915">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250122224915">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250122172535">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250122172535">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250122224915">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250122224915">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header position-relative pt-3 pb-3 bg-white">
 			<div class="container">
-				<div class="header__body d-flex">
+				<div class="header__body d-flex justify-content-between align-items-center">
 					<a href="/" class="header__logo">
 						<picture>
 							<source srcset="img/Estaderma-Logo-Brown.webp" type="image/webp"><img src="img/Estaderma-Logo-Brown.png" alt="logotype">
 						</picture>
 					</a>
-					<nav class="header__menu menu">
-						<ul class="menu__list">
-							<li class="menu__item has-child">
-								<a href="" class="menu__link">Shop</a>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="" class="submenu__link">Cleansing and Masks</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Curenex</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Devices</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Disposable</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Equipment for devices</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Fat dissolving</a></li>
-									<li class="submenu__item has-child">
-										<a href="" class="submenu__link">Fillers</a>
-										<ul class="submenu">
-											<li class="submenu__item"><a href="" class="submenu__link">HA Fillers</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link">PLLA Fillers</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link">PCL Filler</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link">Calcium Fillers</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link">Collagen Fillers</a></li>
+					<nav class="header__menu menu subtitle text-uppercase">
+						<ul class="menu__list d-flex fw-semibold flex-wrap mb-0 lh-base">
+							<li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
+								<a href="/shop.html" class="menu__link p-2 w-100 d-block pe-4 ps-4">Shop</a>
+								<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+								<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Cleansing and Masks</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Curenex</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Devices</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Disposable</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Equipment for devices</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Fat dissolving</a></li>
+									<li class="submenu__item has-child position-relative d-flex justify-content-between align-items-center">
+										<a href="" class="submenu__link p-2 w-100">Fillers</a>
+										<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+										<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-0 start-100">
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">HA Fillers</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PLLA Fillers</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PCL Filler</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Calcium Fillers</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Collagen Fillers</a></li>
 										</ul>
 									</li>
-									<li class="submenu__item"><a href="" class="submenu__link">Gift Certificates</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Stock Clearance</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Hair Treatment</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Injection</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Lifting Threads</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Numbing cream</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Saxenda</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Sets</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Skincare</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Toxins</a></li>
-									<li class="submenu__item has-child">
-										<a href="" class="submenu__link">Skin Boosters</a>
-										<ul class="submenu">
-											<li class="submenu__item"><a href="" class="submenu__link">PDRN</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link">HA Based</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link">Others</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Gift Certificates</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Stock Clearance</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Hair Treatment</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Injection</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Lifting Threads</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Numbing cream</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Saxenda</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Sets</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Skincare</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Toxins</a></li>
+									<li class="submenu__item has-child position-relative d-flex justify-content-between align-items-center">
+										<a href="" class="submenu__link p-2 w-100">Skin Boosters</a>
+										<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+										<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-0 start-100">
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PDRN</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">HA Based</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Others</a></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Contacts</a>
+								<a href="/contacts.html" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">Contacts</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">WHOLESALE</a>
+								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">WHOLESALE</a>
 							</li>
-							<li class="menu__item has-child">
-								<a href="" class="menu__link">INFORMATION</a>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="" class="submenu__link">TERMS OF USE</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">SHIPPING</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">RETURN POLICY</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">PAYMENT POLICY</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">Q&amp;R</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">REFUND POLICY</a></li>
+							<li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
+								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 ">INFORMATION</a>
+								<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+								<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">TERMS OF USE</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">SHIPPING</a></li>
+									<li class="submenu__item"><a href="/policy.html" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">RETURN POLICY</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PAYMENT POLICY</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Q&amp;R</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">REFUND POLICY</a></li>
 								</ul>
 							</li>
-							<li class="menu__item has-child">
-								<a href="" class="menu__link">Blog</a>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="" class="submenu__link">ALL POSTS</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link">REQUEST A BLOG</a></li>
+							<li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
+								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 ">Blog</a>
+								<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+								<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">ALL POSTS</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">REQUEST A BLOG</a></li>
 								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">MY ACCOUNT</a>
 							</li>
 						</ul>
 					</nav>
-					<div class="header__actions d-flex">
-						<button type="button" class="header__menu-toggler icon-menu">
+					<div class="header__actions d-flex align-items-center gap-4">
+						<button type="button" class="header__menu-toggler icon-menu d-lg-none">
 							<span></span>
 							<span></span>
 							<span></span>
 						</button>
+						<a href="#search" data-fancybox="" class="header__search icon-search"></a>
+						<div class="header__cart position-relative">
+							<a href="/cart.html" class="header__cart-btn icon-cart">
+								<span class="position-absolute rounded-circle d-flex justify-content-center align-items-center bg-danger text-white">2</span>
+							</a>
+							<div class="header__cart-view position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 end-0">
+								<ul class="header__cart-list d-flex flex-column gap-3 ps-0">
+									<li class="header__cart-item d-flex align-items-center gap-3">
+										<a href="" class="header__cart-thumb ratio-1x1 flex-shrink-0">
+											<picture>
+												<source srcset="img/ED-Juveeyes.webp" type="image/webp"><img src="img/ED-Juveeyes.png" class="cover-image" alt="thumb">
+											</picture>
+										</a>
+										<div class="header__cart-product d-flex flex-column">
+											<a href="" class="header__cart-name title-xs">JUVE EYES</a>
+											<span class="header__cart-info subtitle mt-1 color-secondary">2 x $ 46.00</span>
+										</div>
+										<button type="button" aria-label="remove from cart" class="header__cart-remove icon-close ms-auto text-danger rounded-circle flex-shrink-0 p-1"></button>
+									</li>
+									<li class="header__cart-item d-flex align-items-center gap-3">
+										<a href="" class="header__cart-thumb ratio-1x1 flex-shrink-0">
+											<picture>
+												<source srcset="img/Nefer-TiTi-1.webp" type="image/webp"><img src="img/Nefer-TiTi-1.png" class="cover-image" alt="thumb">
+											</picture>
+										</a>
+										<div class="header__cart-product d-flex flex-column">
+											<a href="" class="header__cart-name title-xs">1.st NEFER TI TI SOLUTION</a>
+											<span class="header__cart-info subtitle mt-1 color-secondary">$ 116.00</span>
+										</div>
+										<button type="button" aria-label="remove from cart" class="header__cart-remove icon-close ms-auto text-danger rounded-circle flex-shrink-0 p-1"></button>
+									</li>
+								</ul>
+								<div class="header__cart-total d-flex justify-content-between align-items-center pt-4 border-top mt-4 fs-5">
+									<div class="fw-semibold">Subtotal:</div>
+									<div class="fw-semibold flex-shrink-0">$ 880.00</div>
+								</div>
+								<div class="header__cart-actions mt-4">
+									<a href="" class="header__cart-action btn btn-dark w-100">View cart</a>
+									<a href="" class="header__cart-action btn btn-dark w-100 mt-2">Checkout</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -206,7 +256,7 @@
 					<div class="products__body bg-light">
 						<div class="row align-items-center">
 							<div class="col-4">
-								<div class="products__collection">
+								<div class="products__col`1lection">
 									<div class="products__collection-image">
 										<picture>
 											<source srcset="img/Mesotherapy-opt.webp" type="image/webp"><img src="img/Mesotherapy-opt.webp" class="cover-image" alt="poster collection">
@@ -220,7 +270,7 @@
 								<div class="products__slider swiper ms-5">
 									<div class="swiper-wrapper">
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="Dermaheal SR">
 													<picture>
 														<source srcset="img/sr.webp" type="image/webp"><img src="img/sr.png" alt="product photo">
@@ -229,7 +279,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 													<span>Add to cart</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 											</div>
 											<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 												<a href="" class="product__name title-xs">Dermaheal SR</a>
@@ -240,7 +290,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="Caratfill Aurora">
 													<picture>
 														<source srcset="img/ED-caratfill.webp" type="image/webp"><img src="img/ED-caratfill.png" alt="product photo">
@@ -249,7 +299,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 													<span>Add to cart</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 												<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 													<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-danger">sold</span>
 												</div>
@@ -263,7 +313,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="Juve Face">
 													<picture>
 														<source srcset="img/ED-juve-face.webp" type="image/webp"><img src="img/ED-juve-face.png" alt="product photo">
@@ -272,7 +322,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 													<span>Read more</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 												<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 													<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-dark">sale</span>
 												</div>
@@ -287,7 +337,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="JUVE EYES">
 													<picture>
 														<source srcset="img/ED-Juveeyes.webp" type="image/webp"><img src="img/ED-Juveeyes.png" alt="product photo">
@@ -296,7 +346,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 													<span>Add to cart</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 											</div>
 											<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 												<a href="" class="product__name title-xs">JUVE EYES</a>
@@ -308,7 +358,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="1.st NEFER TI TI SOLUTION">
 													<picture>
 														<source srcset="img/Nefer-TiTi-1.webp" type="image/webp"><img src="img/Nefer-TiTi-1.png" alt="product photo">
@@ -317,7 +367,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 													<span>Add to cart</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 											</div>
 											<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 												<a href="" class="product__name title-xs">1.st NEFER TI TI SOLUTION</a>
@@ -350,7 +400,7 @@
 								<div class="products__slider swiper ms-5">
 									<div class="swiper-wrapper">
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="Ozempic 2.01mg / 1.5ml">
 													<picture>
 														<source srcset="img/Ozempic-ED.webp" type="image/webp"><img src="img/Ozempic-ED.png" alt="product photo">
@@ -359,7 +409,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 													<span>Select options</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 												<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 													<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-dark">sale</span>
 												</div>
@@ -374,7 +424,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="Wegovy 1mg">
 													<picture>
 														<source srcset="img/Wegovy-2.webp" type="image/webp"><img src="img/Wegovy-2.png" alt="product photo">
@@ -383,7 +433,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 													<span>Read more</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 												<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 													<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-dark">sale</span>
 												</div>
@@ -398,7 +448,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="SAXENDA PEN 3.0ML">
 													<picture>
 														<source srcset="img/saxenda22_456x456_3ee-1.webp" type="image/webp"><img src="img/saxenda22_456x456_3ee-1.webp" alt="product photo">
@@ -407,7 +457,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 													<span>Select options</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 												<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 													<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-danger">sold</span>
 												</div>
@@ -422,7 +472,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="SAXENDA PEN 3.0ML (5 PENS)">
 													<picture>
 														<source srcset="img/saxenda11_456x456_3ee.webp" type="image/webp"><img src="img/saxenda11_456x456_3ee.webp" alt="product photo">
@@ -431,7 +481,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 													<span>Read more</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 											</div>
 											<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 												<a href="" class="product__name title-xs">SAXENDA PEN 3.0ML (5 PENS)</a>
@@ -443,7 +493,7 @@
 											</div>
 										</div>
 										<div class="product d-flex flex-column bg-white swiper-slide">
-											<div class="product__thumb position-relative p-3">
+											<div class="product__thumb position-relative ">
 												<a href="" class="product__image d-block" title="SAXENDA PEN NEEDLE (5EA)">
 													<picture>
 														<source srcset="img/saxenda-needle_456x456_3ee.webp" type="image/webp"><img src="img/saxenda-needle_456x456_3ee.webp" alt="product photo">
@@ -452,7 +502,7 @@
 												<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 													<span>Add to cart</span>
 												</a>
-												<button class="product__favorite-btn favorite-btn position-absolute"></button>
+												<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 											</div>
 											<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 												<a href="" class="product__name title-xs">SAXENDA PEN NEEDLE (5EA)</a>
@@ -478,7 +528,7 @@
 					<div class="products__slider products__slider-lg swiper">
 						<div class="swiper-wrapper">
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="JEIL Lidocaine 2%">
 										<picture>
 											<source srcset="img/Lido-2-ED.webp" type="image/webp"><img src="img/Lido-2-ED.jpg" alt="product photo">
@@ -487,7 +537,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 										<span>Add to cart</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 									<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 										<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-danger">sold</span>
 									</div>
@@ -502,7 +552,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="Rejuvafill 100cc">
 										<picture>
 											<source srcset="img/RejuvaFill-ED.webp" type="image/webp"><img src="img/RejuvaFill-ED.png" alt="product photo">
@@ -511,7 +561,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 										<span>Read more</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 								</div>
 								<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 									<a href="" class="product__name title-xs">Rejuvafill 100cc</a>
@@ -523,7 +573,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="HAIRNA Exosome Booster Ampoule">
 										<picture>
 											<source srcset="img/Hairna-exosome-ampoule-E.webp" type="image/webp"><img src="img/Hairna-exosome-ampoule-E.png" alt="product photo">
@@ -532,7 +582,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 										<span>Add to cart</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 									<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 										<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-dark">sale</span>
 									</div>
@@ -547,7 +597,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="Ozempic 2.01mg / 1.5ml">
 										<picture>
 											<source srcset="img/Ozempic-ED.webp" type="image/webp"><img src="img/Ozempic-ED.png" alt="product photo">
@@ -556,7 +606,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 										<span>Select options</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 									<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 										<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-danger">sold</span>
 									</div>
@@ -571,7 +621,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="Wegovy 1mg">
 										<picture>
 											<source srcset="img/Wegovy-ED.webp" type="image/webp"><img src="img/Wegovy-ED.png" alt="product photo">
@@ -580,7 +630,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 										<span>Read more</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 								</div>
 								<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 									<a href="" class="product__name title-xs">Wegovy 1mg</a>
@@ -592,7 +642,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="Dermaheal HL">
 										<picture>
 											<source srcset="img/HL.webp" type="image/webp"><img src="img/HL.png" alt="product photo">
@@ -601,7 +651,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 										<span>Add to cart</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 								</div>
 								<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 									<a href="" class="product__name title-xs">Dermaheal HL</a>
@@ -613,7 +663,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="Dermaheal SR">
 										<picture>
 											<source srcset="img/sr.webp" type="image/webp"><img src="img/sr.png" alt="product photo">
@@ -622,7 +672,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 										<span>Add to cart</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 									<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 										<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-danger">sold</span>
 									</div>
@@ -637,7 +687,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="Dermaheal HSR">
 										<picture>
 											<source srcset="img/HSR.webp" type="image/webp"><img src="img/HSR.png" alt="product photo">
@@ -646,7 +696,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 										<span>Read more</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 									<div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
 										<span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-danger">sold</span>
 									</div>
@@ -661,7 +711,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="Muchcaine 5% Plus">
 										<picture>
 											<source srcset="img/Muchcaine-plus-ED.webp" type="image/webp"><img src="img/Muchcaine-plus-ED.png" alt="product photo">
@@ -670,7 +720,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-arrowshape-turn-up-right-circle-fill">
 										<span>Read more</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 								</div>
 								<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 									<a href="" class="product__name title-xs">Muchcaine 5% Plus</a>
@@ -682,7 +732,7 @@
 								</div>
 							</div>
 							<div class="product d-flex flex-column bg-white swiper-slide">
-								<div class="product__thumb position-relative p-3">
+								<div class="product__thumb position-relative ">
 									<a href="" class="product__image d-block" title="VOM M - Volume">
 										<picture>
 											<source srcset="img/VOM-Volume-ED.webp" type="image/webp"><img src="img/VOM-Volume-ED.jpg" alt="product photo">
@@ -691,7 +741,7 @@
 									<a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-cart-add-filled">
 										<span>Add to cart</span>
 									</a>
-									<button class="product__favorite-btn favorite-btn position-absolute"></button>
+									<button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
 								</div>
 								<div class="product__body d-flex flex-column p-3 pb-4 text-center ">
 									<a href="" class="product__name title-xs">VOM M - Volume</a>
@@ -916,7 +966,7 @@
 									<button type="submit" class="icon-send position-absolute top-50 translate-middle-y end-0 p-4"></button>
 								</div>
 							</form>
-							<div class="footer__socials d-flex align-items-center color-secondary mt-5 gap-322">
+							<div class="footer__socials d-flex align-items-center color-secondary mt-5 gap-3">
 								<div class="footer__socials-text">Social Media :</div>
 								<a href="" class="footer__social d-flex justify-content-center align-items-center rounded-circle flex-shrink-0 icon-youtube"></a>
 								<a href="" class="footer__social d-flex justify-content-center align-items-center rounded-circle flex-shrink-0 icon-instagram"></a>
@@ -932,12 +982,36 @@
 				</div>
 			</div>
 		</footer>
-		<a href="#" class="btn-top position-fixed d-flex justify-content-center align-items-center icon-chevron-up"></a> <!-- plugnis -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250122172535"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250122172535"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250122172535"></script>
+		<a href="#" class="btn-top position-fixed d-flex justify-content-center align-items-center icon-chevron-up"></a>
+		<div id="search" class="popup pt-5 pb-5" tabindex="-1">
+			<form action="#" class="search d-flex justify-content-between align-items-center position-relative">
+				<input type="text" autocomplete="off" name="search" class="search__field form-control w-100" placeholder="enter keyword">
+				<button type="submit" class="search__btn icon-search position-absolute top-50 translate-middle-y end-0 p-4"></button>
+			</form>
+		</div>
+		<div id="wishlist" class="popup popup-sm bg-white p-4" tabindex="-1">
+			<div class="bg-white d-flex flex-column align-items-center text-center align-items-center text-black">
+				<div class="title-md icon-heart-plus-outline d-flex flex-column gap-2"> Product added to&nbsp;Wishlist </div>
+				<div class="popup__btns mt-4">
+					<a href="" class="popup__btn btn btn-dark icon-heart w-100">View Wishlist</a>
+					<button type="button" data-fancybox-close="" class="popup__btn btn btn-dark icon-close w-100 mt-2">Close</button>
+				</div>
+			</div>
+		</div>
+		<div id="wishlist-remove" class="popup popup-sm bg-white p-4" tabindex="-1">
+			<div class="d-flex flex-column align-items-center text-center align-items-center text-black">
+				<div class="title-md icon-heart-minus-outline d-flex flex-column gap-2"> Product removed from&nbsp;Wishlist </div>
+				<div class="popup__btns mt-4">
+					<a href="" class="popup__btn btn btn-dark icon-heart w-100">View Wishlist</a>
+					<button type="button" data-fancybox-close="" class="popup__btn btn btn-dark icon-close w-100 mt-2">Close</button>
+				</div>
+			</div>
+		</div> <!-- plugnis -->
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250122224915"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250122224915"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250122224915"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20250122172535"></script>
+		<script src="js/app.min.js?_v=20250122224915"></script>
 	</div>
 </body>
 

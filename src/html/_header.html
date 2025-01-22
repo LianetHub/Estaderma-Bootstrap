@@ -1,82 +1,128 @@
-<header class="header">
+<header class="header position-relative pt-3 pb-3@@if(typeof className !== 'undefined' && className.length > 0){ @@className}@@if(typeof className == 'undefined'){ bg-white}">
     <div class="container">
-        <div class="header__body d-flex">
+        <div class="header__body d-flex justify-content-between align-items-center">
             <a href="/" class="header__logo">
                 <img src="@img/Estaderma-Logo-Brown.png" alt="logotype">
             </a>
-            <nav class="header__menu menu">
-                <ul class="menu__list">
-                    <li class="menu__item has-child">
-                        <a href="" class="menu__link">Shop</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">Cleansing and Masks</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Curenex</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Devices</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Disposable</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Equipment for devices</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Fat dissolving</a></li>
-                            <li class="submenu__item has-child">
-                                <a href="" class="submenu__link">Fillers</a>
-                                <ul class="submenu">
-                                    <li class="submenu__item"><a href="" class="submenu__link">HA Fillers</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">PLLA Fillers</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">PCL Filler</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Calcium Fillers</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Collagen Fillers</a></li>
+            <nav class="header__menu menu subtitle text-uppercase">
+                <ul class="menu__list d-flex fw-semibold flex-wrap mb-0 lh-base">
+                    <li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
+                        <a href="/shop.html" class="menu__link p-2 w-100 d-block pe-4 ps-4">Shop</a>
+                        <button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+                        <ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Cleansing and Masks</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Curenex</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Devices</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Disposable</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Equipment for devices</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Fat dissolving</a></li>
+                            <li class="submenu__item has-child position-relative d-flex justify-content-between align-items-center">
+                                <a href="" class="submenu__link p-2 w-100">Fillers</a>
+                                <button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+                                <ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-0 start-100">
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">HA Fillers</a></li>
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PLLA Fillers</a></li>
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PCL Filler</a></li>
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Calcium Fillers</a></li>
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Collagen Fillers</a></li>
                                 </ul>
                             </li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Gift Certificates</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Stock Clearance</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Hair Treatment</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Injection</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Lifting Threads</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Numbing cream</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Saxenda</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Sets</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Skincare</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Toxins</a></li>
-                            <li class="submenu__item has-child">
-                                <a href="" class="submenu__link">Skin Boosters</a>
-                                <ul class="submenu">
-                                    <li class="submenu__item"><a href="" class="submenu__link">PDRN</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">HA Based</a></li>
-                                    <li class="submenu__item"><a href="" class="submenu__link">Others</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Gift Certificates</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Stock Clearance</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Hair Treatment</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Injection</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Lifting Threads</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Numbing cream</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Saxenda</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Sets</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Skincare</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Toxins</a></li>
+                            <li class="submenu__item has-child position-relative d-flex justify-content-between align-items-center">
+                                <a href="" class="submenu__link p-2 w-100">Skin Boosters</a>
+                                <button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+                                <ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-0 start-100">
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PDRN</a></li>
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">HA Based</a></li>
+                                    <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Others</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link">Contacts</a>
+                        <a href="/contacts.html" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">Contacts</a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link">WHOLESALE</a>
+                        <a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">WHOLESALE</a>
                     </li>
-                    <li class="menu__item has-child">
-                        <a href="" class="menu__link">INFORMATION</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">TERMS OF USE</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">SHIPPING</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">RETURN POLICY</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">PAYMENT POLICY</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">Q&R</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">REFUND POLICY</a></li>
+                    <li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
+                        <a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 ">INFORMATION</a>
+                        <button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+                        <ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">TERMS OF USE</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">SHIPPING</a></li>
+                            <li class="submenu__item"><a href="/policy.html" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">RETURN POLICY</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PAYMENT POLICY</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Q&R</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">REFUND POLICY</a></li>
                         </ul>
                     </li>
-                    <li class="menu__item has-child">
-                        <a href="" class="menu__link">Blog</a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="" class="submenu__link">ALL POSTS</a></li>
-                            <li class="submenu__item"><a href="" class="submenu__link">REQUEST A BLOG</a></li>
+                    <li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
+                        <a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 ">Blog</a>
+                        <button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
+                        <ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">ALL POSTS</a></li>
+                            <li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">REQUEST A BLOG</a></li>
                         </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">MY ACCOUNT</a>
                     </li>
                 </ul>
             </nav>
-            <div class="header__actions d-flex">
-                <button type="button" class="header__menu-toggler icon-menu">
+            <div class="header__actions d-flex align-items-center gap-4">
+                <button type="button" class="header__menu-toggler icon-menu d-lg-none">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
+                <a href="#search" data-fancybox class="header__search icon-search"></a>
+                <div class="header__cart position-relative">
+                    <a href="/cart.html" class="header__cart-btn icon-cart">
+                        <span class="position-absolute rounded-circle d-flex justify-content-center align-items-center bg-danger text-white">2</span>
+                    </a>
+                    <div class="header__cart-view position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 end-0">
+                        <ul class="header__cart-list d-flex flex-column gap-3 ps-0">
+                            <li class="header__cart-item d-flex align-items-center gap-3">
+                                <a href="" class="header__cart-thumb ratio-1x1 flex-shrink-0">
+                                    <img src="@img/ED-Juveeyes.png" class="cover-image" alt="thumb">
+                                </a>
+                                <div class="header__cart-product d-flex flex-column">
+                                    <a href="" class="header__cart-name title-xs">JUVE EYES</a>
+                                    <span class="header__cart-info subtitle mt-1 color-secondary">2 x $ 46.00</span>
+                                </div>
+                                <button type="button" aria-label="remove from cart" class="header__cart-remove icon-close ms-auto text-danger rounded-circle flex-shrink-0 p-1"></button>
+                            </li>
+                            <li class="header__cart-item d-flex align-items-center gap-3">
+                                <a href="" class="header__cart-thumb ratio-1x1 flex-shrink-0">
+                                    <img src="@img/Nefer-TiTi-1.png" class="cover-image" alt="thumb">
+                                </a>
+                                <div class="header__cart-product d-flex flex-column">
+                                    <a href="" class="header__cart-name title-xs">1.st NEFER TI TI SOLUTION</a>
+                                    <span class="header__cart-info subtitle mt-1 color-secondary">$ 116.00</span>
+                                </div>
+                                <button type="button" aria-label="remove from cart" class="header__cart-remove icon-close ms-auto text-danger rounded-circle flex-shrink-0 p-1"></button>
+                            </li>
+                        </ul>
+                        <div class="header__cart-total d-flex justify-content-between align-items-center pt-4 border-top mt-4 fs-5">
+                            <div class="fw-semibold">Subtotal:</div>
+                            <div class="fw-semibold flex-shrink-0">$ 880.00</div>
+                        </div>
+                        <div class="header__cart-actions mt-4">
+                            <a href="" class="header__cart-action btn btn-dark w-100">View cart</a>
+                            <a href="" class="header__cart-action btn btn-dark w-100 mt-2">Checkout</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

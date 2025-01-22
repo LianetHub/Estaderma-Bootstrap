@@ -65,6 +65,9 @@ body {
 		}
 	}
 }
+html.with-fancybox body.hide-scrollbar {
+	margin-right: 0 !important;
+}
 
 :root {
 	--bs-light-rgb: 232, 209, 187;
@@ -119,6 +122,9 @@ body {
 // ========================================================
 
 @import "pages/home.scss";
+@import "pages/catalog.scss";
+@import "pages/contacts.scss";
+@import "pages/policy.scss";
 
 .product {
 	// .product__thumb
@@ -278,5 +284,31 @@ body {
 	}
 	// .product__cashback
 	&__cashback {
+	}
+}
+
+.heading {
+	padding: rem(60) 0 rem(100);
+	// .heading__title
+	&__title {
+	}
+}
+
+.breadcrumb {
+	&-item {
+		a {
+			color: inherit;
+			text-decoration: none;
+			transition: color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					color: #b2a69b;
+				}
+			}
+			&.active {
+				color: #b2a69b;
+				pointer-events: none;
+			}
+		}
 	}
 }

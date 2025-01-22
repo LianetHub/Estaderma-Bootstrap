@@ -1,12 +1,12 @@
 <div class="product d-flex flex-column bg-white @@className">
-    <div class="product__thumb position-relative p-3">
+    <div class="product__thumb position-relative ">
         <a href="" class="product__image d-block" title="@@name">
             <img src="@@image" alt="product photo">
         </a>
         <a href="" class="product__btn btn btn-dark position-absolute top-50 start-50 translate-middle icon-@@btnIcon">
             <span>@@btnText</span>
         </a>
-        <button class="product__favorite-btn favorite-btn position-absolute"></button>
+        <button type="button" class="product__favorite-btn favorite-btn position-absolute"></button>
         @@if(typeof labels !== 'undefined' && labels.length > 0) {
         <div class="product__labels position-absolute fw-semibold d-flex text-center gap-1">
             @@for (var i = 0; i < labels.length; i++) { <span class="product__label align-content-center p-1 ps-2 pe-2 text-uppercase text-white bg-`+labels[i].type+`">`+labels[i].text+`</span>}

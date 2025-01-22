@@ -1,6 +1,18 @@
 //============ МОДУЛИ ====================
-// @import "modules/popup";
+@import "modules/popup";
 //============ МОДУЛИ ====================
+
+.title-lg {
+	font-size: rem(36);
+	@media (min-width: $md4) {
+		font-size: rem(50);
+	}
+	@media (min-width: $md2) {
+		font-size: rem(68);
+	}
+	font-family: $font-cormorant;
+	font-style: italic;
+}
 
 .title {
 	font-size: rem(56);
@@ -23,12 +35,18 @@
 .title-decor {
 	position: relative;
 	z-index: 1;
+	&.text-center {
+		&::before {
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 	&::before {
 		content: "";
 		position: absolute;
 		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		left: 0;
+		transform: translate(0, -50%);
 		width: rem(150);
 		height: rem(150);
 		z-index: -1;
@@ -61,6 +79,10 @@
 	background: #fdf9f5;
 }
 
+.bg-light {
+	--bs-bg-opacity: 0.3;
+}
+
 .favorite-btn {
 	width: 1.5rem;
 	height: 1.5rem;
@@ -69,6 +91,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-shrink: 0;
+	text-decoration: none;
+	color: inherit;
 	&::before {
 		@extend %ic, .icon-heart;
 		transition: all 0.3s ease 0s;

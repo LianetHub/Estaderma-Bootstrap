@@ -8,13 +8,37 @@
 }
 
 .fancybox__backdrop {
-	background: rgba(37, 40, 51, 0.75);
+	background: rgba(75, 64, 54, 0.95);
 }
 
 .fancybox__content {
 	color: inherit;
 	background: none;
+	// position: static !important;
 	padding: 0;
+}
+
+// .is-animating .fancybox__content {
+// 	will-change: width, height !important;
+// }
+// .is-dragging .fancybox__content {
+// 	will-change: width, height !important;
+// }
+
+.fancybox__content > .f-button.is-close-btn {
+	// position: fixed !important;
+	// top: 1rem;
+	// right: 1rem;
+	--f-button-width: #{rem(44)};
+	--f-button-height: #{rem(44)};
+	top: rem(-50);
+	background: #b2a69b;
+	color: #fff;
+	@media (any-hover: hover) {
+		&:hover {
+			background: $text;
+		}
+	}
 }
 
 .fancybox__content :focus:not(.carousel__button.is-close) {
@@ -27,32 +51,21 @@
 	padding: 0;
 	background: none;
 	max-width: 61.5rem;
+	margin: 0 auto;
+	&.popup-sm {
+		max-width: rem(375);
+	}
+}
 
-	// .popup__body
-	&__body {
-		position: relative;
-		width: 100%;
-		border: rem(1) solid #565151;
-		background: #252833;
-		display: flex;
-		flex-direction: column;
-		padding: 1.56rem;
-		@media (min-width: $md5) {
-			padding: 2.5rem;
+.search {
+	// .search__field
+	&__field {
+		&.form-control {
+			font-size: 1.5rem;
 		}
 	}
-
-	// .popup__title
-	&__title {
-		text-align: center;
-	}
-	// .popup__form
-	&__form {
-		display: flex;
-		flex-direction: column;
-		max-width: 40.9375rem;
-		width: 100%;
-		margin: 2rem auto 0;
-		gap: 0.94rem;
+	// .search__btn
+	&__btn {
+		font-size: 1.5rem;
 	}
 }

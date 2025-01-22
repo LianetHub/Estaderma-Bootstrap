@@ -31,6 +31,16 @@
 	--bs-btn-border-radius: 0;
 	text-transform: uppercase;
 	letter-spacing: em(1.8, 12);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	&::before {
+		font-size: 1.25rem;
+	}
+	&:focus-visible {
+		background-color: var(--bs-btn-bg);
+	}
 	&.btn-dark {
 		--bs-btn-color: #fff;
 		--bs-btn-bg: #4b4036;

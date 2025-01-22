@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', {
+    'title': 'Estaderma'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "className": "bg-beige"
+            })
+            <main class="page">
+                <section class="heading pt-5 pb-5 bg-beige">
+                    <div class="container">
+                        <h1 class="heading__title title-lg text-center">Shop</h1>
+                        <nav aria-label="breadcrumb" class="mt-4">
+                            <ol class="breadcrumb subtitle text-uppercase d-flex justify-content-center align-items-center">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </section>
+                <div class="catalog pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="catalog__grid d-grid">
+                                    @@loop('./html/_product.html', ./html/json/catalog.json')
+                                </div>
+                                1
+                                2
+                                3
+                                …
+                                30
+                                Next
+                            </div>
+                            <div class="col-3">
+                                <aside class="catalog__sidebar">
+                                    Search
+                                    Search for:
+                                    Search
+                                    Product categories
+                                    Stock Clearance
+                                    (5)
+                                    Cleansing and Masks
+                                    (11)
+                                    Curenex
+                                    (5)
+                                    Devices
+                                    (17)
+                                    Disposable
+                                    (15)
+                                    Equipment for devices
+                                    (10)
+                                    Fat dissolving
+                                    (14)
+                                    MESO THERAPY
+                                    (1)
+                                    Fillers
+                                    (75)
+                                    HA Fillers
+                                    (61)
+                                    PLLA Fillers
+                                    (11)
+                                    PCL Filler
+                                    (1)
+                                    Calcium Fillers
+                                    (2)
+                                    Collagen Fillers
+                                    (1)
+                                    Gift Certificates
+                                    (4)
+                                    Hair Treatment
+                                    (9)
+                                    Injection
+                                    (20)
+                                    Lifting Threads
+                                    (33)
+                                    Numbing cream
+                                    (15)
+                                    Saxenda
+                                    (5)
+                                    Sets
+                                    (11)
+                                    Skin Boosters
+                                    (56)
+                                    PDRN
+                                    (18)
+                                    HA Based
+                                    (16)
+                                    Others
+                                    (25)
+                                    Skincare
+                                    (29)
+                                    Toxins
+                                    (18)
+                                    Filter by price
+                                    Min price
+                                    Max price
+                                    Filter
+                                    Price:
+                                    —
+                                    Product tags
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

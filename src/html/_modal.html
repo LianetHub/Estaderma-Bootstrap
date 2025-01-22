@@ -1,11 +1,28 @@
-<div id="activate" class="popup">
-    <div class="popup__body">
-        <h3 class="popup__title title">Activate Hero Mode</h3>
-        <form action="#" class="popup__form">
-            <input type="text" name="name" class="form__input" placeholder="Name">
-            <input type="email" name="email" class="form__input" placeholder="Email">
-            <textarea name="message" class="form__textarea" placeholder="Text"></textarea>
-            <button type="submit" class="form__btn btn btn-primary">Activate Hero Mode</button>
-        </form>
+<div id="search" class="popup pt-5 pb-5" tabindex="-1">
+    <form action="#" class="search d-flex justify-content-between align-items-center position-relative">
+        <input type="text" autocomplete="off" name="search" class="search__field form-control w-100" placeholder="enter keyword">
+        <button type="submit" class="search__btn icon-search position-absolute top-50 translate-middle-y end-0 p-4"></button>
+    </form>
+</div>
+<div id="wishlist" class="popup popup-sm bg-white p-4" tabindex="-1">
+    <div class="bg-white d-flex flex-column align-items-center text-center align-items-center text-black">
+        <div class="title-md icon-heart-plus-outline d-flex flex-column gap-2">
+            Product added to&nbsp;Wishlist
+        </div>
+        <div class="popup__btns mt-4">
+            <a href="" class="popup__btn btn btn-dark icon-heart w-100">View Wishlist</a>
+            <button type="button" data-fancybox-close class="popup__btn btn btn-dark icon-close w-100 mt-2">Close</button>
+        </div>
+    </div>
+</div>
+<div id="wishlist-remove" class="popup popup-sm bg-white p-4" tabindex="-1">
+    <div class="d-flex flex-column align-items-center text-center align-items-center text-black">
+        <div class="title-md icon-heart-minus-outline d-flex flex-column gap-2">
+            Product removed from&nbsp;Wishlist
+        </div>
+        <div class="popup__btns mt-4">
+            <a href="" class="popup__btn btn btn-dark icon-heart w-100">View Wishlist</a>
+            <button type="button" data-fancybox-close class="popup__btn btn btn-dark icon-close w-100 mt-2">Close</button>
+        </div>
     </div>
 </div>

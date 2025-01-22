@@ -1,0 +1,246 @@
+.header {
+	z-index: 10;
+	// .header__body
+	&__body {
+	}
+	// .header__logo
+	&__logo {
+	}
+	// .header__menu
+	&__menu {
+	}
+	// .header__actions
+	&__actions {
+	}
+	// .header__menu-toggler
+	&__menu-toggler {
+	}
+	// .header__search
+	&__search {
+		font-size: 2rem;
+		color: $text;
+		text-decoration: none;
+	}
+	// .header__cart
+	&__cart {
+		@media (any-hover: hover) {
+			&:hover {
+				.header__cart-view {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+	// .header__cart-btn
+	&__cart-btn {
+		font-size: 2rem;
+		color: $text;
+		text-decoration: none;
+		& span {
+			font-size: 0.5em;
+			top: -0.75rem;
+			right: -0.75rem;
+			width: 1.5em;
+			height: 1.5em;
+		}
+	}
+
+	// .header__cart-view
+	&__cart-view {
+		min-width: rem(360);
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.2s ease;
+		@media (hover: none) {
+			&.active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		&.header__cart-empty {
+			display: none !important;
+		}
+	}
+	// .header__cart-list
+	&__cart-list {
+	}
+	// .header__cart-item
+	&__cart-item {
+	}
+	// .header__cart-thumb
+	&__cart-thumb {
+		max-width: 5rem;
+		border: rem(1) solid $secondary;
+	}
+	// .header__cart-product
+	&__cart-product {
+	}
+	// .header__cart-name
+	&__cart-name {
+		text-decoration: none;
+		color: $text;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #b2a69b;
+			}
+		}
+	}
+	// .header__cart-info
+	&__cart-info {
+	}
+	// .header__cart-remove
+	&__cart-remove {
+		font-size: 1.75rem;
+		transition: background-color 0.3s ease, color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				background: rgba(var(--bs-danger-rgb));
+				color: #fff !important;
+			}
+		}
+	}
+	// .header__cart-total
+	&__cart-total {
+	}
+	// .header__cart-actions
+	&__cart-actions {
+	}
+	// .header__cart-action
+	&__cart-action {
+	}
+}
+
+.menu {
+	font-size: rem(12);
+	// .menu__list
+	&__list {
+	}
+	// .menu__item
+	&__item {
+		&.has-child {
+			@media (any-hover: hover) {
+				&:hover {
+					& > .menu__link {
+						color: #b2a69b;
+					}
+					& > .submenu {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+	// .menu__link
+	&__link {
+		color: $text;
+		text-decoration: none;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #b2a69b;
+			}
+		}
+		&::before {
+			order: 1;
+			@media (min-width: $md3) {
+				display: none;
+			}
+		}
+	}
+}
+
+.submenu {
+	min-width: rem(225);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s ease;
+	// .submenu__item
+	&__item {
+		&.has-child {
+			@media (any-hover: hover) {
+				&:hover {
+					& > .submenu__link {
+						color: #b2a69b;
+					}
+					& > .submenu {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+
+	// .submenu__link
+	&__link {
+		color: $text;
+		text-decoration: none;
+		&::before {
+			order: 1;
+			@media (min-width: $md3) {
+				display: none;
+			}
+		}
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #b2a69b;
+			}
+		}
+	}
+}
+
+.icon-menu {
+	flex-shrink: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	order: 1;
+	min-width: 2.5rem;
+	height: 2.5rem;
+	z-index: 11;
+	& span {
+		display: block;
+		padding: rem(4) rem(4);
+		transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
+		will-change: transform;
+		&::before {
+			content: "";
+			display: block;
+			height: rem(2);
+			border-radius: rem(2);
+			width: rem(32);
+			background: currentColor;
+			transition: transform 0.3s ease 0s;
+			will-change: transform;
+		}
+	}
+	&.active {
+		& span {
+			transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+			&::before {
+				transition: transform 0.45s ease 0.35s, width 0.3s ease 0s;
+			}
+			&:first-child {
+				transform: translateY(rem(7));
+				&::before {
+					transform: rotate(-135deg);
+				}
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: translateY(rem(-7));
+				&::before {
+					transform: rotate(-225deg);
+				}
+			}
+		}
+	}
+}

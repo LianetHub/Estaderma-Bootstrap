@@ -49,16 +49,61 @@ $(function () {
         $("body").addClass(support ? 'webp' : 'no-webp');
     });
 
+
+
     // Event handlers
     $(document).on("click", function (e) {
+
         const $target = $(e.target);
+
         // Add your event logic here
 
         // favorite btn
         if ($target.is('.favorite-btn')) {
-            $target.toggleClass('active')
+            $target.toggleClass('active');
+            setTimeout(() => {
+                if ($target.hasClass('active')) {
+                    Fancybox.show([{ src: "#wishlist", type: "inline" }]);
+                } else {
+                    Fancybox.show([{ src: "#wishlist-remove", type: "inline" }]);
+                }
+            }, 300)
         }
+
+        // Клик по кнопке .header__cart-btn
+        if ($target.closest('.header__cart-btn').length) {
+            if ($("body").hasClass("_touch") && !$('.header__cart-view').hasClass('header__cart-empty')) {
+                e.preventDefault();
+                $(".header__cart-view").toggleClass("active");
+            }
+        } else if (!$target.closest('.header__cart-view.active').length) {
+            $(".header__cart-view").removeClass("active");
+        }
+
+
+        // header cart - remove from cart
+        if ($target.is('.header__cart-remove')) {
+            $target.closest('.header__cart-item').remove();
+            updateCartCount();
+        }
+
+
     });
+
+
+    function updateCartCount() {
+        const itemCount = $(".header__cart-item").length;
+        const $cartCountBadge = $(".header__cart-btn span");
+
+        if (itemCount > 0) {
+            $cartCountBadge.text(itemCount);
+        } else {
+            $cartCountBadge.remove();
+            if ($(".header__cart-item").length === 0) {
+                $('.header__cart-view').addClass('header__cart-empty');
+            }
+        }
+    }
 
     // sliders 
     if ($('.products__slider').length > 0) {
@@ -109,5 +154,10 @@ $(function () {
             }
         })
     }
+
+    // Fancybox.show([{
+    //     src: "#wishlist",
+    //     dragToClose: false,
+    // }])
 
 });

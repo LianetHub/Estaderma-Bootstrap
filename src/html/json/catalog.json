@@ -1,0 +1,176 @@
+[
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/ed-card-1000_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "Sale",
+        "currentPrice": "$ 950.00",
+        "oldPrice": "$ 1,000.00",
+        "cashback": "47.5 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/Nefer-TiTi-1.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "1.st NEFER TI TI SOLUTION",
+        "currentPrice": "$ 116.00",
+        "oldPrice": "$ 116.00",
+        "cashback": "5.8 $"
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/ed-card-100_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "100$",
+        "currentPrice": "$ 100.00",
+        "oldPrice": "$ 100.00",
+        "cashback": "5 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/2xsome-ed_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "2XSOME SKIN BOOSTER",
+        "currentPrice": "$ 75.00",
+        "oldPrice": "$ 93.00",
+        "cashback": "3.75 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/image_456x456_3ee-1.webp",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Select options",
+        "name": "3 pins Nanosoft Microneedle 5ea",
+        "currentPrice": "$ 28.00",
+        "oldPrice": "$ 28.00",
+        "cashback": "1.4 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/ed-card-500_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "300$",
+        "currentPrice": "$ 290.00",
+        "oldPrice": "$ 300.00",
+        "cashback": "14.5 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/Mericit-Cleansing-Gel.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "500$",
+        "currentPrice": "$ 480.00",
+        "oldPrice": "$ 500.00",
+        "cashback": "24 $",
+        "labels": [
+            {
+                "text": "sale",
+                "type": "dark"
+            }
+        ]
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/Merikit-Infusion-set.png",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "AC infusion cleansing gel",
+        "currentPrice": "$ 45.00",
+        "oldPrice": "$ 45.00",
+        "cashback": "2.25 $"
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/aestefill_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "AC Infusion SET",
+        "currentPrice": "$ 121.00",
+        "oldPrice": "$ 121.00",
+        "cashback": "6.05 $",
+        "labels": [
+            {
+                "text": "sold",
+                "type": "danger"
+            }
+        ]
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/cica-set-ed-1_456x456_3ee.webp",
+        "btnIcon": "arrowshape-turn-up-right-circle-fill",
+        "btnText": "Read more",
+        "name": "Aesthefill",
+        "currentPrice": "$ 223.00",
+        "oldPrice": "$ 223.00",
+        "cashback": "11.15 $"
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/cica-set-ed-2_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "AFTERCARE SET",
+        "currentPrice": "$ 66.00",
+        "oldPrice": "$ 66.00",
+        "cashback": "3.3 $"
+    },
+    {
+        "className": "",
+        "label": "none",
+        "image": "@img/product-template-ami-eyes_456x456_3ee.webp",
+        "btnIcon": "cart-add-filled",
+        "btnText": "Add to cart",
+        "name": "Ami Eyes(PN)",
+        "currentPrice": "$ 41.00",
+        "oldPrice": "$ 41.00",
+        "cashback": "2.05 $"
+    }
+]
