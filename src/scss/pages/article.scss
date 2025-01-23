@@ -1,0 +1,101 @@
+.article {
+	.container {
+		max-width: rem(447);
+	}
+	&__link {
+		text-decoration: none;
+		color: $text;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #b2a69b;
+			}
+		}
+	}
+	// .article__image
+	&__image {
+	}
+	// .article__body
+	&__body {
+		font-size: rem(18);
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 0.75rem;
+			}
+		}
+		& a {
+			text-decoration: underline;
+			color: inherit;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		& ul {
+			list-style: disc;
+			&:not(:last-child) {
+				margin-bottom: 0.75rem;
+			}
+			& li {
+				&:not(:last-child) {
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+		& img {
+			width: 100%;
+			display: block;
+			&:not(:first-child) {
+				margin-top: rem(24);
+			}
+			&:not(:last-child) {
+				margin-bottom: 0.75rem;
+			}
+		}
+		& h2 {
+			&:not(:first-child) {
+				margin-top: rem(24);
+			}
+			margin-bottom: 0.75rem;
+			@extend .title-md;
+		}
+		& h3 {
+			&:not(:first-child) {
+				margin-top: rem(24);
+			}
+			margin-bottom: 0.75rem;
+			@extend .title-sm;
+		}
+		& iframe {
+			max-width: 100%;
+			display: block;
+			&:not(:first-child) {
+				margin-top: rem(24);
+			}
+			&:not(:last-child) {
+				margin-bottom: 0.75rem;
+			}
+		}
+	}
+	// .article__views
+	&__views {
+	}
+	// .article__views-item
+	&__views-item {
+		text-decoration: none;
+		border: rem(1) solid #b2a69b;
+		color: $text;
+		font-size: 1.25rem;
+		&::before {
+			font-size: 1.5rem;
+		}
+		transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background: $text;
+				color: #fff;
+			}
+		}
+	}
+}

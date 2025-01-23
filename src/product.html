@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', {
+    'title': 'Estaderma'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 1,
+            "className": "bg-beige"
+            })
+            <main class="page">
+                <section class="heading bg-beige">
+                    <div class="container">
+                        <h1 class="heading__title title-lg text-center">Shop</h1>
+                        <nav aria-label="breadcrumb" class="mt-4">
+                            <ol class="breadcrumb subtitle text-uppercase d-flex justify-content-center align-items-center">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item"><a href="/shop.html">Shop</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">isposable3 pins Nanosoft Microneedle 5ea</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </section>
+                <section class="product-card pt-5 pb-5">
+                    <div class="container">
+                        <div class="product-card__main">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <a href="@img/image_456x456_3ee-1.webp" data-fancybox class="product-card__image">
+                                        <img src="@img/image_456x456_3ee-1.webp" alt="product">
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="product-card__body d-flex flex-column align-items-start">
+                                        <h2 class="product-card__title title-md">
+                                            3 pins Nanosoft Microneedle 5ea
+                                        </h2>
+                                        <div class="product-card__price mt-3">$28.00</div>
+                                        <div class="product__cashback bg-dark text-white ps-1 pe-1 subtitle mt-3">Cashback: 1.4 $</div>
+                                        <div class="product__sizes mt-3 d-flex align-items-center gap-2">
+                                            <div class="product__sizes-caption flex-shrink-0">Sizes: *</div>
+                                            <select class="form-select">
+                                                <option selected>Choose an option</option>
+                                                <option value="1.0">1.0 mm</option>
+                                                <option value="1.2">1.2 mm</option>
+                                                <option value="1.5">1.5 mm</option>
+                                            </select>
+                                        </div>
+                                        <div class="product__quantity d-flex flex-wrap align-items-center gap-2 mt-3">
+                                            <div class="quantity-block d-flex flex-shrink-0">
+                                                <button type="button" class="quantity-block__btn minus">-</button>
+                                                <input type="number" name="quantity" class="quantity-block__input" value="1">
+                                                <button type="button" class="quantity-block__btn plus">+</button>
+                                            </div>
+                                            <button type="button" class="btn btn-dark icon-cart-add-filled">add to cart</button>
+                                        </div>
+                                        <button type="button" class="btn btn-dark mt-3 favorite-btn">add to wishlist</button>
+                                        <button type="button" class="btn btn-dark mt-3 icon-arrowshape-turn-up-right-circle-fill">compare</button>
+                                        <div class="product-card__info mt-3 d-flex flex-column gap-3">
+                                            <div class="product-card__info-row">
+                                                <strong>SKU:</strong> 27059
+                                            </div>
+                                            <div class="product-card__info-row">
+                                                <strong>Category:</strong> Disposable
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__tabs mt-5">
+                            <div class="product-card__btns pt-1 pb-1 d-flex flex-wrap justify-content-center align-items-center ">
+                                <button type="button" class="product-card__btn subtitle text-uppercase p-3 pt-4 pb-4 active">Description</button>
+                                <button type="button" class="product-card__btn subtitle text-uppercase p-3 pt-4 pb-4">Reviews (0)</button>
+                            </div>
+                            <div class="product-card__blocks mt-5 ms-auto me-auto lh-base">
+                                <div class="product-card__block active">
+                                    <p>
+                                        The Microneedle is an innovative single-use medical device, which enables a nearly painless and
+                                        accurate injection into the dermis. The microneedle is made up of 4 silicone micro-cones, making the needle three times smaller than a normal injection needle.
+                                        Furthermore, the needle improves patient comfort and minimizes the risk of bruising.
+                                    </p>
+                                </div>
+                                <div class="product-card__block">
+                                    <p>
+                                        There are no reviews yet.
+                                    </p>
+                                    <p>
+                                        Only logged in customers who have purchased this product may leave a review.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="products pt-lg-5 pt-4 pb-lg-5 pb-4">
+                    <h2 class="products__title title title-decor text-center">Related products</h2>
+                    <div class="products__content ps-4 pe-4 mt-5">
+                        <div class="products__slider products__slider-lg swiper">
+                            <div class="swiper-wrapper">
+                                @@loop('./html/_product.html', './html/json/new.json')
+                            </div>
+                            <div class="products__pagination swiper-pagination mt-lg-5 mt-3"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>

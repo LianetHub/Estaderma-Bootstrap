@@ -88,22 +88,24 @@
 }
 
 .favorite-btn {
-	width: 1.5rem;
-	height: 1.5rem;
-	font-size: 1.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-shrink: 0;
-	text-decoration: none;
-	color: inherit;
 	&::before {
 		@extend %ic, .icon-heart;
 		transition: all 0.3s ease 0s;
 	}
-	@media (any-hover: hover) {
-		&:hover {
-			color: $beige-dark;
+	&:not(.btn) {
+		width: 1.5rem;
+		height: 1.5rem;
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		text-decoration: none;
+		color: inherit;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $beige-dark;
+			}
 		}
 	}
 	&.active {
@@ -123,6 +125,46 @@
 				}
 			}
 		}
+	}
+	&.btn {
+		&.active {
+			&::before {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.quantity-block {
+	border: rem(1) solid #b2a69b;
+	// .quantity-block__btn
+	&__btn {
+		width: rem(52);
+		height: rem(52);
+		font-size: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 0;
+		transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background: #b2a69b;
+				color: #fff;
+			}
+		}
+	}
+	// .quantity-block__input
+	&__input {
+		width: rem(52);
+		height: rem(52);
+		font-size: 1.5rem;
+		border-top: 0;
+		border-bottom: 0;
+		border-left: rem(1) solid #b2a69b;
+		border-right: rem(1) solid #b2a69b;
+		padding: 0;
+		text-align: center;
 	}
 }
 

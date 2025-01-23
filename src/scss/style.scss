@@ -6,7 +6,7 @@
 // ======================================МИКСИНЫ==============================================
 
 // ======================================ШРИФТЫ===============================================
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// @import "../../node_modules/bootstrap/scss/bootstrap";
 // &display=swap&subset=cyrillic-ext
 @import "fonts";
 @import "icons";
@@ -127,8 +127,11 @@ html.with-fancybox body.hide-scrollbar {
 @import "pages/catalog.scss";
 @import "pages/contacts.scss";
 @import "pages/policy.scss";
+@import "pages/article.scss";
+@import "pages/product.scss";
 
 .product {
+	height: auto;
 	// .product__thumb
 	&__thumb {
 		position: relative;

@@ -102,6 +102,12 @@ $(function () {
             $target.next().slideToggle()
         }
 
+        // product page tabs
+        if ($target.is('.product-card__btn')) {
+            $target.addClass('active').siblings().removeClass('active');
+            $('.product-card__block').eq($target.index()).addClass('active').siblings().removeClass('active');
+        }
+
 
     });
 
@@ -208,6 +214,48 @@ $(function () {
         });
     });
 
+    // quantity block
+
+    if ($('.quantity-block').length > 0) {
+
+        const minQuantity = 1;
+
+
+        $('.quantity-block').on('click', '.plus', function () {
+            const $block = $(this).closest('.quantity-block');
+            const $input = $block.find('.quantity-block__input');
+            let currentValue = parseInt($input.val(), 10);
+
+
+            $input.val(currentValue + 1);
+        });
+
+
+        $('.quantity-block').on('click', '.minus', function () {
+            const $block = $(this).closest('.quantity-block');
+            const $input = $block.find('.quantity-block__input');
+            let currentValue = parseInt($input.val(), 10);
+
+
+            if (currentValue > minQuantity) {
+                $input.val(currentValue - 1);
+            }
+        });
+
+
+        $('.quantity-block').on('input', '.quantity-block__input', function () {
+            const $input = $(this);
+            let value = parseInt($input.val(), 10);
+
+
+            if (isNaN(value) || value < minQuantity) {
+                value = minQuantity;
+            }
+
+            $input.val(value);
+        });
+
+    }
 
 
 });

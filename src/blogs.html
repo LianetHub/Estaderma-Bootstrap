@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/_head.html', {
+    'title': 'Estaderma'
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {
+            "active": 4,
+            "className": "bg-beige"
+            })
+            <main class="page">
+                <section class="heading bg-beige">
+                    <div class="container">
+                        <h1 class="heading__title title-lg text-center">Blogs</h1>
+                        <nav aria-label="breadcrumb" class="mt-4">
+                            <ol class="breadcrumb subtitle text-uppercase d-flex justify-content-center align-items-center">
+                                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </section>
+                <section class="blog">
+                    <div class="container">
+                        <div class="blog__body mt-5">
+                            <div class="row">
+                                @@loop('./html/_blog-item.html', './html/json/blog-page.json')
+                            </div>
+                            <nav aria-label="pagination" class="mt-md-5 mt-3">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+            @@include('html/_modal.html', {})
+            @@include('html/_js.html', {})
+        </div>
+    </body>
+</html>
