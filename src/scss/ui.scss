@@ -1,5 +1,6 @@
 //============ МОДУЛИ ====================
 @import "modules/popup";
+@import "modules/range-slider";
 //============ МОДУЛИ ====================
 
 .title-lg {
@@ -15,7 +16,7 @@
 }
 
 .title {
-	font-size: rem(56);
+	font-size: clamp(2rem, 1.7rem + 1.5vw, 3.5rem);
 	font-family: $font-cormorant;
 	font-style: italic;
 }
@@ -27,9 +28,12 @@
 }
 
 .title-sm {
-	font-size: rem(30);
 	font-family: $font-cormorant;
 	font-style: italic;
+	font-size: rem(24);
+	@media (min-width: $md4) {
+		font-size: rem(30);
+	}
 }
 
 .title-decor {
@@ -171,6 +175,38 @@
 		&:hover {
 			background: #fff;
 			color: $text;
+		}
+	}
+}
+
+.pagination {
+	--bs-pagination-padding-x: 1em;
+	--bs-pagination-padding-y: 0.5em;
+	--bs-pagination-font-size: 1rem;
+	--bs-pagination-color: #{$text};
+	--bs-pagination-bg: var(--bs-body-bg);
+	--bs-pagination-border-width: var(--bs-border-width);
+	--bs-pagination-border-color: var(--bs-border-color);
+	--bs-pagination-border-radius: var(--bs-border-radius);
+	--bs-pagination-hover-color: #fff;
+	--bs-pagination-hover-bg: #{$text};
+	--bs-pagination-hover-border-color: var(--bs-border-color);
+	--bs-pagination-focus-color: #b2a69b;
+	--bs-pagination-focus-bg: var(--bs-secondary-bg);
+	--bs-pagination-focus-box-shadow: 0 0 0 0.25rem #{rgba($text, 0.5)};
+	--bs-pagination-active-color: #fff;
+	--bs-pagination-active-bg: #{$text};
+	--bs-pagination-active-border-color: var(--bs-border-color);
+	--bs-pagination-disabled-color: var(--bs-secondary-color);
+	--bs-pagination-disabled-bg: var(--bs-secondary-bg);
+	--bs-pagination-disabled-border-color: var(--bs-border-color);
+	& .page-link {
+		// font-size: 1.5rem;
+		// color: inherit;
+		&.active {
+			// color: var(--bs-pagination-active-color);
+			// background-color: var(--bs-pagination-active-bg);
+			// border-color: var(--bs-pagination-active-border-color);
 		}
 	}
 }

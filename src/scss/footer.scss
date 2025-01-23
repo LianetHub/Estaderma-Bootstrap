@@ -1,7 +1,10 @@
 .footer {
 	background: $text;
 	color: #fff;
-	padding: rem(130) 0 rem(20);
+	padding: rem(80) 0 rem(20);
+	@media (min-width: $md1) {
+		padding: rem(130) 0 rem(20);
+	}
 	// .footer__title
 	&__title {
 	}
@@ -69,7 +72,16 @@
 	}
 	// .footer__body
 	&__body {
-		margin-top: rem(100);
+		margin-top: rem(60);
+		@media (min-width: $md4) {
+			margin-top: rem(100);
+		}
+		.row {
+			--bs-gutter-y: 2rem;
+			@media (min-width: $md5) {
+				--bs-gutter-y: 4rem;
+			}
+		}
 	}
 	// .footer__logo
 	&__logo {
@@ -101,7 +113,9 @@
 	}
 	// .footer__menu-list
 	&__menu-list {
-		grid-template-columns: repeat(2, 1fr);
+		@media (min-width: $md5) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 		& li {
 			padding-left: 1.5em;
 			position: relative;
@@ -169,7 +183,10 @@
 	}
 	// .footer__bottom
 	&__bottom {
-		margin-top: rem(120);
+		margin-top: rem(80);
+		@media (min-width: $md5) {
+			margin-top: rem(120);
+		}
 		border-top: rem(1) solid rgba(178, 166, 155, 0.329);
 	}
 	// .footer__copy

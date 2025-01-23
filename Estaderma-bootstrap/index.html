@@ -25,18 +25,19 @@
 	<meta property="twitter:url" content="">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css?_v=20250122224915">
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250122224915">
-	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250122224915">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css?_v=20250123131703">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250123131703">
+	<link rel="stylesheet" href="css/libs/fancybox.min.css?_v=20250123131703">
+	<link rel="stylesheet" href="css/libs/nouislider.min.css?_v=20250123131703">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250122224915">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250122224915">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250123131703">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250123131703">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header position-relative pt-3 pb-3 bg-white">
-			<div class="container">
+		<header class="header position-relative pt-lg-3 pb-lg-3 pt-2 pb-2 bg-white">
+			<div class="container-fluid">
 				<div class="header__body d-flex justify-content-between align-items-center">
 					<a href="/" class="header__logo">
 						<picture>
@@ -44,77 +45,77 @@
 						</picture>
 					</a>
 					<nav class="header__menu menu subtitle text-uppercase">
-						<ul class="menu__list d-flex fw-semibold flex-wrap mb-0 lh-base">
-							<li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
-								<a href="/shop.html" class="menu__link p-2 w-100 d-block pe-4 ps-4">Shop</a>
-								<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
-								<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Cleansing and Masks</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Curenex</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Devices</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Disposable</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Equipment for devices</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Fat dissolving</a></li>
-									<li class="submenu__item has-child position-relative d-flex justify-content-between align-items-center">
-										<a href="" class="submenu__link p-2 w-100">Fillers</a>
-										<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
-										<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-0 start-100">
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">HA Fillers</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PLLA Fillers</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PCL Filler</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Calcium Fillers</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Collagen Fillers</a></li>
+						<ul class="menu__list d-flex flex-lg-row flex-column justify-content-lg-center fw-semibold flex-lg-wrap mb-0 lh-base ps-lg-0 ms-lg-0 ms-auto">
+							<li class="menu__item has-child position-relative">
+								<a href="/shop.html" class="menu__link p-lg-4 pt-lg-3 pb-lg-3 p-3 w-100 d-block">Shop</a>
+								<button type="button" class="menu__arrow icon-chevron-up d-lg-none p-3"></button>
+								<ul class="submenu bg-white p-lg-3 pt-lg-4 pb-lg-4 top-100 start-0">
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Cleansing and Masks</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Curenex</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Devices</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Disposable</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Equipment for devices</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Fat dissolving</a></li>
+									<li class="submenu__item has-child position-relative">
+										<a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Fillers</a>
+										<button type="button" class="menu__arrow icon-chevron-up d-lg-none p-3"></button>
+										<ul class="submenu bg-white p-lg-3 pt-lg-4 pb-lg-4 top-0 start-100">
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">HA Fillers</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">PLLA Fillers</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">PCL Filler</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Calcium Fillers</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Collagen Fillers</a></li>
 										</ul>
 									</li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Gift Certificates</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Stock Clearance</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Hair Treatment</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Injection</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Lifting Threads</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Numbing cream</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Saxenda</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Sets</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Skincare</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Toxins</a></li>
-									<li class="submenu__item has-child position-relative d-flex justify-content-between align-items-center">
-										<a href="" class="submenu__link p-2 w-100">Skin Boosters</a>
-										<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
-										<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-0 start-100">
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PDRN</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">HA Based</a></li>
-											<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Others</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Gift Certificates</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Stock Clearance</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Hair Treatment</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Injection</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Lifting Threads</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Numbing cream</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Saxenda</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Sets</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Skincare</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Toxins</a></li>
+									<li class="submenu__item has-child position-relative">
+										<a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Skin Boosters</a>
+										<button type="button" class="menu__arrow icon-chevron-up d-lg-none p-3"></button>
+										<ul class="submenu bg-white p-lg-3 pt-lg-4 pb-lg-4 top-0 start-100">
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">PDRN</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">HA Based</a></li>
+											<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Others</a></li>
 										</ul>
 									</li>
 								</ul>
 							</li>
 							<li class="menu__item">
-								<a href="/contacts.html" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">Contacts</a>
+								<a href="/contacts.html" class="menu__link p-lg-4 pt-lg-3 pb-lg-3 p-3 w-100 d-block">Contacts</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">WHOLESALE</a>
+								<a href="" class="menu__link p-lg-4 pt-lg-3 pb-lg-3 p-3 w-100 d-block">WHOLESALE</a>
 							</li>
-							<li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
-								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 ">INFORMATION</a>
-								<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
-								<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">TERMS OF USE</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">SHIPPING</a></li>
-									<li class="submenu__item"><a href="/policy.html" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">RETURN POLICY</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">PAYMENT POLICY</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">Q&amp;R</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">REFUND POLICY</a></li>
+							<li class="menu__item has-child position-relative">
+								<a href="" class="menu__link p-lg-4 pt-lg-3 pb-lg-3 p-3 w-100 d-block">INFORMATION</a>
+								<button type="button" class="menu__arrow icon-chevron-up d-lg-none p-3"></button>
+								<ul class="submenu bg-white p-lg-3 pt-lg-4 pb-lg-4 top-100 start-0">
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">TERMS OF USE</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">SHIPPING</a></li>
+									<li class="submenu__item"><a href="/policy.html" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">RETURN POLICY</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">PAYMENT POLICY</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">Q&amp;R</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">REFUND POLICY</a></li>
 								</ul>
 							</li>
-							<li class="menu__item has-child position-relative d-flex justify-content-between align-items-center">
-								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 ">Blog</a>
-								<button type="button" class="menu__arrow icon-chevron-up d-lg-none"></button>
-								<ul class="submenu position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 start-0">
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">ALL POSTS</a></li>
-									<li class="submenu__item"><a href="" class="submenu__link p-2 pt-1 pb-1 w-100 d-block">REQUEST A BLOG</a></li>
+							<li class="menu__item has-child position-relative">
+								<a href="" class="menu__link p-lg-4 pt-lg-3 pb-lg-3 p-3 w-100 d-block">Blog</a>
+								<button type="button" class="menu__arrow icon-chevron-up d-lg-none p-3"></button>
+								<ul class="submenu bg-white p-lg-3 pt-lg-4 pb-lg-4 top-100 start-0">
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">ALL POSTS</a></li>
+									<li class="submenu__item"><a href="" class="submenu__link p-lg-2 pt-lg-2 pb-lg-2 p-3 w-100 d-block">REQUEST A BLOG</a></li>
 								</ul>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link p-2 w-100 d-block pe-4 ps-4 d-block">MY ACCOUNT</a>
+								<a href="" class="menu__link p-lg-4 pt-lg-3 pb-lg-3 p-3 w-100 d-block">MY ACCOUNT</a>
 							</li>
 						</ul>
 					</nav>
@@ -129,7 +130,7 @@
 							<a href="/cart.html" class="header__cart-btn icon-cart">
 								<span class="position-absolute rounded-circle d-flex justify-content-center align-items-center bg-danger text-white">2</span>
 							</a>
-							<div class="header__cart-view position-absolute bg-white shadow d-flex flex-column p-3 pt-4 pb-4 top-100 end-0">
+							<div class="header__cart-view position-absolute bg-white d-flex flex-column p-3 pt-4 pb-4 top-100 end-0">
 								<ul class="header__cart-list d-flex flex-column gap-3 ps-0">
 									<li class="header__cart-item d-flex align-items-center gap-3">
 										<a href="" class="header__cart-thumb ratio-1x1 flex-shrink-0">
@@ -171,11 +172,11 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="promo pb-5">
+			<div class="promo pb-lg-5 pb-4">
 				<div class="row">
-					<div class="col-7">
+					<div class="col-lg-7">
 						<div class="row">
-							<div class="col-4">
+							<div class="col-xl-4 col-sm-5">
 								<div class="promo__card d-flex align-items-end">
 									<div class="promo__card-image">
 										<picture>
@@ -189,7 +190,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-8">
+							<div class="col-xl-8 col-sm-7">
 								<div class="promo__card d-flex align-items-end">
 									<div class="promo__card-image">
 										<picture>
@@ -203,7 +204,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-7">
+							<div class="col-sm-7">
 								<div class="promo__card d-flex align-items-end">
 									<div class="promo__card-image">
 										<picture>
@@ -217,7 +218,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-5">
+							<div class="col-sm-5">
 								<div class="promo__card d-flex align-items-end">
 									<div class="promo__card-image">
 										<picture>
@@ -233,7 +234,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-5">
+					<div class="col-lg-5 order-lg-0 order-first">
 						<div class="promo__card d-flex align-items-end">
 							<div class="promo__card-image">
 								<picture>
@@ -249,14 +250,14 @@
 					</div>
 				</div>
 			</div>
-			<section class="products pt-5 pb-5">
+			<section class="products pt-lg-5 pt-4 pb-lg-5 pb-4">
 				<div class="container">
 					<h2 class="products__title title title-decor text-center">Our Best Sellers</h2>
 					<p class="products__subtitle subtitle text-center color-secondary text-uppercase mt-3">LIFTING, CONTOURING, VOLUMIZING</p>
 					<div class="products__body bg-light">
 						<div class="row align-items-center">
-							<div class="col-4">
-								<div class="products__col`1lection">
+							<div class="col-lg-4">
+								<div class="products__collection me-auto ms-lg-0 ms-auto d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
 									<div class="products__collection-image">
 										<picture>
 											<source srcset="img/Mesotherapy-opt.webp" type="image/webp"><img src="img/Mesotherapy-opt.webp" class="cover-image" alt="poster collection">
@@ -266,8 +267,8 @@
 									<a href="" class="products__collection-btn btn btn-dark mt-3">View All Products</a>
 								</div>
 							</div>
-							<div class="col-8">
-								<div class="products__slider swiper ms-5">
+							<div class="col-lg-8">
+								<div class="products__slider swiper ms-lg-5">
 									<div class="swiper-wrapper">
 										<div class="product d-flex flex-column bg-white swiper-slide">
 											<div class="product__thumb position-relative ">
@@ -385,8 +386,8 @@
 					</div>
 					<div class="products__body bg-light">
 						<div class="row align-items-center">
-							<div class="col-4">
-								<div class="products__collection">
+							<div class="col-lg-4">
+								<div class="products__collection me-auto ms-lg-0 ms-auto d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
 									<div class="products__collection-image">
 										<picture>
 											<source srcset="img/Saxenda-opt.webp" type="image/webp"><img src="img/Saxenda-opt.webp" class="cover-image" alt="poster collection">
@@ -396,8 +397,8 @@
 									<a href="" class="products__collection-btn btn btn-dark mt-3">View All Products</a>
 								</div>
 							</div>
-							<div class="col-8">
-								<div class="products__slider swiper ms-5">
+							<div class="col-lg-8">
+								<div class="products__slider swiper ms-lg-5">
 									<div class="swiper-wrapper">
 										<div class="product d-flex flex-column bg-white swiper-slide">
 											<div class="product__thumb position-relative ">
@@ -521,7 +522,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="products pt-2 pb-5 bg-beige">
+			<section class="products pt-lg-2 pt-4 pb-lg-5 pb-4 bg-beige">
 				<h2 class="products__title title title-decor text-center">New Arrivals</h2>
 				<p class="products__subtitle subtitle text-center color-secondary text-uppercase">Trending Cosmetics</p>
 				<div class="products__content ps-4 pe-4 mt-5">
@@ -753,35 +754,35 @@
 								</div>
 							</div>
 						</div>
-						<div class="products__pagination swiper-pagination mt-5"></div>
+						<div class="products__pagination swiper-pagination mt-lg-5 mt-3"></div>
 					</div>
 				</div>
 			</section>
 			<section class="benefits bg-light mt-4">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-6">
+						<div class="col-xl-6">
 							<div class="row">
-								<div class="col-3">
+								<div class="col-md-3 col-6">
 									<div class="benefits__card h-100 d-flex flex-column justify-content-between">
 										<div class="benefits__card-num font-secondary">4.6</div>
 										<div class="benefits__card-rate mt-3">★★★★★</div>
 										<div class="benefits__card-desc subtitle text-uppercase">176 Reviews</div>
 									</div>
 								</div>
-								<div class="col-3">
+								<div class="col-md-3 col-6">
 									<div class="benefits__card h-100 d-flex flex-column justify-content-between">
 										<div class="benefits__card-num font-secondary">25k</div>
 										<div class="benefits__card-desc subtitle text-uppercase mt-3 lh-lg">World Wide Customers</div>
 									</div>
 								</div>
-								<div class="col-3">
+								<div class="col-md-3 col-6">
 									<div class="benefits__card h-100 d-flex flex-column justify-content-between">
 										<div class="benefits__card-num font-secondary">10M</div>
 										<div class="benefits__card-desc subtitle text-uppercase mt-3 lh-lg">Products Purchased</div>
 									</div>
 								</div>
-								<div class="col-3">
+								<div class="col-md-3 col-6">
 									<div class="benefits__card h-100 d-flex flex-column justify-content-between">
 										<div class="benefits__card-peoples mb-auto">
 											<picture>
@@ -793,16 +794,16 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
-							<div class="d-flex align-items-center justify-content-between gap-3">
+						<div class="col-xl-6 order-xl-0 order-first">
+							<div class="d-flex align-items-center justify-content-md-between justify-content-center text-md-start text-center flex-wrap-reverse gap-3">
 								<h2 class="benefits__tagline title-sm">Did you love Estaderma products? Let us know! Leave a helpful product review and get 0.25 points!</h2>
 								<div class="benefits__images d-flex align-items-center">
-									<div class="benefits__image">
+									<div class="benefits__image flex-shrink-sm-0">
 										<picture>
 											<source srcset="img/AdobeStock_125594632@2x-opt.webp" type="image/webp"><img src="img/AdobeStock_125594632@2x-opt.webp" class="rounded-circle" alt="image">
 										</picture>
 									</div>
-									<div class="benefits__decor position-relative ">
+									<div class="benefits__decor position-relative">
 										<picture>
 											<source srcset="img/rotate-img-front.webp" type="image/webp"><img src="img/rotate-img-front.png" alt="decor">
 										</picture>
@@ -827,7 +828,7 @@
 					<h2 class="blog__title title text-center">News &amp; Updated Blogs</h2>
 					<div class="blog__body mt-5">
 						<div class="row">
-							<div class="col-4">
+							<div class="col-xl-4 col-md-6">
 								<div class="blog__card d-flex flex-column align-items-start">
 									<a href="" class="blog__image position-relative w-100">
 										<picture>
@@ -837,11 +838,11 @@
 									<time datetime="30-12-2024" class="blog__time subtitle color-secondary mt-4">30/12/2024</time>
 									<a href="" class="blog__type subtitle text-uppercase mt-4">Blog</a>
 									<a href="" class="blog__caption title-sm fw-semibold mt-2">South Korea vs. Europe: Beauty Standards and How Aesthetic Treatments Can Help (Lips, Chin, Nose, and Jawline)</a>
-									<p class="blog__desc mt-2">When examining the long list of beauty standards and aesthetic treatments available in...</p>
+									<p class="blog__desc mt-2 lh-base">When examining the long list of beauty standards and aesthetic treatments available in...</p>
 									<a href="" class="blog__more text-uppercase subtitle text-decoration-underline mt-3">Read More</a>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-xl-4 col-md-6">
 								<div class="blog__card d-flex flex-column align-items-start">
 									<a href="" class="blog__image position-relative w-100">
 										<picture>
@@ -851,11 +852,11 @@
 									<time datetime="24-09-2024" class="blog__time subtitle color-secondary mt-4">24/09/2024</time>
 									<a href="" class="blog__type subtitle text-uppercase mt-4">Blog</a>
 									<a href="" class="blog__caption title-sm fw-semibold mt-2">The Best Korean Biorevitalization Skincare Products! Restore Hydration, Boost Collagen &amp; More!</a>
-									<p class="blog__desc mt-2">Biorevitalization products are cosmetic or dermatological treatments that help rejuvenate the skin. Among...</p>
+									<p class="blog__desc mt-2 lh-base">Biorevitalization products are cosmetic or dermatological treatments that help rejuvenate the skin. Among...</p>
 									<a href="" class="blog__more text-uppercase subtitle text-decoration-underline mt-3">Read More</a>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-xl-4 col-md-6">
 								<div class="blog__card d-flex flex-column align-items-start">
 									<a href="" class="blog__image position-relative w-100">
 										<picture>
@@ -865,7 +866,7 @@
 									<time datetime="24-09-2024" class="blog__time subtitle color-secondary mt-4">05/09/2024</time>
 									<a href="" class="blog__type subtitle text-uppercase mt-4">Blog</a>
 									<a href="" class="blog__caption title-sm fw-semibold mt-2">Mesotherapy for Hands and Neck | Best Korean Brands, Tips &amp; More</a>
-									<p class="blog__desc mt-2">Mesotherapy is a minimally invasive cosmetic procedure and treatment. When partaking in mesotherapy,...</p>
+									<p class="blog__desc mt-2 lh-base">Mesotherapy is a minimally invasive cosmetic procedure and treatment. When partaking in mesotherapy,...</p>
 									<a href="" class="blog__more text-uppercase subtitle text-decoration-underline mt-3">Read More</a>
 								</div>
 							</div>
@@ -913,7 +914,7 @@
 				</div>
 				<div class="footer__body">
 					<div class="row">
-						<div class="col-4">
+						<div class="col-xl-4 col-lg8">
 							<a href="/" class="footer__logo">
 								<picture>
 									<source srcset="img/Estaderma-Logo-white.webp" type="image/webp"><img src="img/Estaderma-Logo-white.png" alt="logo">
@@ -922,7 +923,7 @@
 							<p class="footer__desc mt-5 pe-4 color-secondary lh-base"> The information provided on this website is meant to supplement, it does not replace the advice from a professional and is not meant to cover all possible uses, precautions, interactions, or adverse effects. Our products are meant to be administered by medical professionals. If you are not aware of the use or application method, we highly encourage you to consult an appropriate professional for advice based on your specific circumstances. Estaderma is not responsible for any negative inflictions that may arise after administering products by yourself. </p>
 							<div class="footer__payment mt-5">
 								<h3 class="title-sm"> Accepted Payments: </h3>
-								<ul class="footer__payment-list d-flex  flex-wrap gap-2 ps-0 mt-3">
+								<ul class="footer__payment-list d-flex  gap-2 ps-0 mt-3">
 									<div class="footer__payment-item bg-white d-flex justify-content-center align-items-center p-2 ps-3 pe-3 rounded-2">
 										<img src="img/payment/bank-transfer.svg" alt="bank">
 									</div>
@@ -935,7 +936,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-lg-4">
 							<h3 class="title-sm"> Explore </h3>
 							<nav aria-label="footer menu" class="footer__menu mt-4">
 								<ul class="footer__menu-list color-secondary d-grid gap-3 ps-0">
@@ -951,7 +952,7 @@
 								</ul>
 							</nav>
 						</div>
-						<div class="col-4">
+						<div class="col-xl-4">
 							<h3 class="title-sm"> Subscribe To Our Newsletter </h3>
 							<form action="#" class="footer__form">
 								<div class="footer__form-row position-relative">
@@ -974,15 +975,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer__bottom d-flex justify-content-between align-items-center pt-4 pb-4 color-secondary">
+				<div class="footer__bottom d-flex flex-xl-row flex-column justify-content-xl-between justify-content-center align-items-center pt-4 pb-4 color-secondary">
 					<div class="footer__copy"> © 2024 Estaderma.com. All rights reserved </div>
-					<div class="footer__mail align-content-center">
-						<span class="fw-medium">Mail:</span> <a href="mailto:info@estaderma.com">info@estaderma.com</a>
+					<div class="footer__mail align-content-center mt-xl-0 mt-5">
+						<span class="fw-semibold">Mail:</span> <a href="mailto:info@estaderma.com">info@estaderma.com</a>
 					</div>
 				</div>
 			</div>
 		</footer>
-		<a href="#" class="btn-top position-fixed d-flex justify-content-center align-items-center icon-chevron-up"></a>
+		<a href="#" class="btn-top shadow position-fixed d-flex justify-content-center align-items-center icon-chevron-up"></a>
 		<div id="search" class="popup pt-5 pb-5" tabindex="-1">
 			<form action="#" class="search d-flex justify-content-between align-items-center position-relative">
 				<input type="text" autocomplete="off" name="search" class="search__field form-control w-100" placeholder="enter keyword">
@@ -1007,11 +1008,12 @@
 				</div>
 			</div>
 		</div> <!-- plugnis -->
-		<script src="js/libs/jquery-3.7.1.min.js?_v=20250122224915"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250122224915"></script>
-		<script src="js/libs/swiper-bundle.min.js?_v=20250122224915"></script>
+		<script src="js/libs/jquery-3.7.1.min.js?_v=20250123131703"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250123131703"></script>
+		<script src="js/libs/swiper-bundle.min.js?_v=20250123131703"></script>
+		<script src="js/libs/nouislider.min.js?_v=20250123131703"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20250122224915"></script>
+		<script src="js/app.min.js?_v=20250123131703"></script>
 	</div>
 </body>
 

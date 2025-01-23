@@ -81,6 +81,8 @@ html.with-fancybox body.hide-scrollbar {
 .container-md,
 .container-sm,
 .container {
+	padding-right: rem(20);
+	padding-left: rem(20);
 	@media (min-width: $md0) {
 		max-width: rem(1530);
 	}
@@ -268,7 +270,7 @@ html.with-fancybox body.hide-scrollbar {
 		color: $text;
 		text-decoration: none;
 		display: -webkit-box;
-		-webkit-line-clamp: 1;
+		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -288,7 +290,10 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .heading {
-	padding: rem(60) 0 rem(100);
+	padding: rem(30) 0 rem(60);
+	@media (min-width: $md2) {
+		padding: rem(60) 0 rem(100);
+	}
 	// .heading__title
 	&__title {
 	}
@@ -296,6 +301,8 @@ html.with-fancybox body.hide-scrollbar {
 
 .breadcrumb {
 	&-item {
+		font-size: rem(12);
+
 		a {
 			color: inherit;
 			text-decoration: none;
@@ -305,9 +312,40 @@ html.with-fancybox body.hide-scrollbar {
 					color: #b2a69b;
 				}
 			}
-			&.active {
-				color: #b2a69b;
-				pointer-events: none;
+		}
+		&.active {
+			color: #b2a69b;
+			pointer-events: none;
+		}
+	}
+}
+
+.sidebar {
+	// .sidebar__title
+	&__title {
+	}
+	// .sidebar__list
+	&__list {
+		& a {
+			text-decoration: none;
+			color: inherit;
+			transition: color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					color: #b2a69b;
+				}
+			}
+		}
+	}
+	&__badges {
+		a {
+			font-size: 1.25rem;
+			text-decoration: none;
+			transition: background-color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					background: #b2a69b !important;
+				}
 			}
 		}
 	}

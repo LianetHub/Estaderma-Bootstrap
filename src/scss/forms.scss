@@ -8,17 +8,54 @@
 	border-width: 0 0 rem(1) 0;
 	padding: em(20) em(60, 18) em(20) em(0);
 	text-overflow: ellipsis;
-	color: #fff;
+	color: currentColor;
+	letter-spacing: em(3.25, 18);
+	&:is(textarea) {
+		height: clamp(6.25rem, 5.625rem + 3.125vw, 9.375rem);
+	}
 	&::placeholder {
 		color: #b2a69b;
 		opacity: 1;
 	}
 	&:focus {
-		color: #fff;
+		color: currentColor;
 		background-color: transparent;
-		border-color: #fff;
+		border-color: currentColor;
 		outline: 0;
 		box-shadow: none;
+	}
+}
+
+.form-check {
+	position: relative;
+	padding-left: 2.5em;
+	.form-check-input {
+		&:checked {
+			& + .form-check-label {
+				&::before {
+					@extend %ic, .icon-check;
+				}
+			}
+		}
+	}
+}
+
+.form-check-label {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		border: rem(1) solid #e8d1bb;
+		border-radius: 50%;
+		width: rem(30);
+		height: rem(30);
+		pointer-events: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1рф5rem;
 	}
 }
 

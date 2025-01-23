@@ -1,0 +1,61 @@
+.contacts {
+	padding: rem(60) 0;
+	@media (min-width: $md5) {
+		padding: rem(100) 0;
+	}
+	@media (min-width: $md3) {
+		padding: rem(130) 0;
+	}
+	// .contacts__title
+	&__title {
+	}
+	// .contacts__body
+	&__body {
+		@media (min-width: $md3) {
+			max-width: rem(585);
+		}
+	}
+	// .contacts__desc
+	&__desc {
+		font-size: rem(18);
+	}
+	// .contacts__socials
+	&__socials {
+	}
+	// .contacts__socials-text
+	&__socials-text {
+	}
+	// .contacts__socials-items
+	&__socials-items {
+	}
+	// .contacts__social
+	&__social {
+		width: 2rem;
+		height: 2rem;
+		font-size: 1.25rem;
+		text-decoration: none;
+		background: $text;
+		color: #fff;
+		transition: background-color 0.3s ease;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #b2a69b;
+			}
+		}
+	}
+	// .contacts__link
+	&__link {
+		color: inherit;
+		text-decoration: none;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #b2a69b;
+			}
+		}
+	}
+	// .contacts__form
+	&__form {
+	}
+}

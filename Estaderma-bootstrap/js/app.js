@@ -56,8 +56,6 @@ $(function () {
 
         const $target = $(e.target);
 
-        // Add your event logic here
-
         // favorite btn
         if ($target.is('.favorite-btn')) {
             $target.toggleClass('active');
@@ -70,7 +68,7 @@ $(function () {
             }, 300)
         }
 
-        // Клик по кнопке .header__cart-btn
+        // open header cart
         if ($target.closest('.header__cart-btn').length) {
             if ($("body").hasClass("_touch") && !$('.header__cart-view').hasClass('header__cart-empty')) {
                 e.preventDefault();
@@ -85,6 +83,23 @@ $(function () {
         if ($target.is('.header__cart-remove')) {
             $target.closest('.header__cart-item').remove();
             updateCartCount();
+        }
+
+        // open mobile menu
+        if ($target.closest('.header__menu-toggler').length) {
+            $target.closest('.header__menu-toggler').toggleClass('active');
+            $('.menu').toggleClass('open-menu ');
+        }
+
+        if ($target.hasClass('menu')) {
+            $('.header__menu-toggler').removeClass('active');
+            $('.menu').removeClass('open-menu ');
+        }
+
+        // submenu touch devices
+        if ($target.is('.menu__arrow')) {
+            $target.toggleClass('active')
+            $target.next().slideToggle()
         }
 
 
@@ -117,16 +132,19 @@ $(function () {
                     clickable: true
                 },
                 loop: true,
-                spaceBetween: 40,
+                spaceBetween: 20,
                 slidesPerView: 1,
                 breakpoints: {
                     767.98: {
                         slidesPerView: isLargeSlider ? 3 : 2,
+                        spaceBetween: 20,
                     },
                     1199.98: {
+                        spaceBetween: 30,
                         slidesPerView: isLargeSlider ? 4 : 2,
                     },
                     1499.98: {
+                        spaceBetween: 40,
                         slidesPerView: isLargeSlider ? 5 : 3,
                     },
                 }
@@ -155,9 +173,41 @@ $(function () {
         })
     }
 
-    // Fancybox.show([{
-    //     src: "#wishlist",
-    //     dragToClose: false,
-    // }])
+
+    // range sliders
+
+
+    $('.range-slider').each(function () {
+        const $slider = $(this);
+        const min = parseInt($slider.data('min'), 10);
+        const max = parseInt($slider.data('max'), 10);
+        const $track = $slider.find('.range-slider__track');
+        const $output = $slider.find('.range-slider__output output');
+
+
+        noUiSlider.create($track[0], {
+            start: [min, max],
+            connect: true,
+            range: {
+                min: min,
+                max: max,
+            },
+            format: {
+                to: function (value) {
+                    return `$${Math.round(value).toLocaleString()}`;
+                },
+                from: function (value) {
+                    return parseFloat(value.replace(/^\$/, '').replace(/,/g, ''));
+                }
+            },
+        });
+
+
+        $track[0].noUiSlider.on('update', function (values) {
+            $output.text(`${values[0]} — ${values[1]}`);
+        });
+    });
+
+
 
 });

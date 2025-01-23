@@ -6,10 +6,11 @@
     <body>
         <div class="wrapper">
             @@include('html/_header.html', {
+            "active": 1,
             "className": "bg-beige"
             })
             <main class="page">
-                <section class="heading pt-5 pb-5 bg-beige">
+                <section class="heading bg-beige">
                     <div class="container">
                         <h1 class="heading__title title-lg text-center">Shop</h1>
                         <nav aria-label="breadcrumb" class="mt-4">
@@ -23,84 +24,82 @@
                 <div class="catalog pt-5 pb-5">
                     <div class="container">
                         <div class="row">
-                            <div class="col-9">
+                            <div class="col-xl-9 col-lg-8">
                                 <div class="catalog__grid d-grid">
                                     @@loop('./html/_product.html', ./html/json/catalog.json')
                                 </div>
-                                1
-                                2
-                                3
-                                …
-                                30
-                                Next
+                                <nav aria-label="pagination" class="mt-md-5 mt-3">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+
                             </div>
-                            <div class="col-3">
-                                <aside class="catalog__sidebar">
-                                    Search
-                                    Search for:
-                                    Search
-                                    Product categories
-                                    Stock Clearance
-                                    (5)
-                                    Cleansing and Masks
-                                    (11)
-                                    Curenex
-                                    (5)
-                                    Devices
-                                    (17)
-                                    Disposable
-                                    (15)
-                                    Equipment for devices
-                                    (10)
-                                    Fat dissolving
-                                    (14)
-                                    MESO THERAPY
-                                    (1)
-                                    Fillers
-                                    (75)
-                                    HA Fillers
-                                    (61)
-                                    PLLA Fillers
-                                    (11)
-                                    PCL Filler
-                                    (1)
-                                    Calcium Fillers
-                                    (2)
-                                    Collagen Fillers
-                                    (1)
-                                    Gift Certificates
-                                    (4)
-                                    Hair Treatment
-                                    (9)
-                                    Injection
-                                    (20)
-                                    Lifting Threads
-                                    (33)
-                                    Numbing cream
-                                    (15)
-                                    Saxenda
-                                    (5)
-                                    Sets
-                                    (11)
-                                    Skin Boosters
-                                    (56)
-                                    PDRN
-                                    (18)
-                                    HA Based
-                                    (16)
-                                    Others
-                                    (25)
-                                    Skincare
-                                    (29)
-                                    Toxins
-                                    (18)
-                                    Filter by price
-                                    Min price
-                                    Max price
-                                    Filter
-                                    Price:
-                                    —
-                                    Product tags
+                            <div class="col-xl-3 col-lg-4">
+                                <aside class="sidebar">
+                                    <h2 class="sidebar__title title-md">Search</h2>
+                                    <form action="#" class="sidebar__form mt-3 position-relative">
+                                        <input type="text" autocomplete="off" name="search products" class="form-control w-100" placeholder="enter keyword">
+                                        <button type="submit" class="icon-search position-absolute top-50 translate-middle-y end-0 p-4"></button>
+                                    </form>
+                                    <h2 class="sidebar__title title-md mt-5">Product categories</h2>
+                                    <ul class="sidebar__list mt-5 ps-0 d-flex flex-column align-items-start gap-3 subtitle text-uppercase">
+                                        <li><a href="">Stock Clearance <span class="color-secondary">(5)</span></a></li>
+                                        <li><a href="">Cleansing and Masks <span class="color-secondary">(11)</span></a></li>
+                                        <li><a href="">Curenex <span class="color-secondary">(5)</span></a></li>
+                                        <li><a href="">Devices <span class="color-secondary">(17)</span></a></li>
+                                        <li><a href="">Disposable <span class="color-secondary">(15)</span></a></li>
+                                        <li><a href="">Equipment for devices <span class="color-secondary">(10)</span></a></li>
+                                        <li><a href="">Fat dissolving <span class="color-secondary">(14)</span></a></li>
+                                        <li><a href="">MESO THERAPY <span class="color-secondary">(1)</span></a></li>
+                                        <li>
+                                            <a href="">Fillers <span class="color-secondary">(75)</span></a>
+                                            <ul class="d-flex flex-column align-items-start gap-3 mt-3">
+                                                <li><a href="">HA Fillers <span class="color-secondary">(61)</span></a></li>
+                                                <li><a href="">PLLA Fillers <span class="color-secondary">(11)</span></a></li>
+                                                <li><a href="">PCL Filler <span class="color-secondary">(1)</span></a></li>
+                                                <li><a href="">Calcium Fillers <span class="color-secondary">(2)</span></a></li>
+                                                <li><a href="">Collagen Fillers <span class="color-secondary">(1)</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Gift Certificates <span class="color-secondary">(4)</span></a></li>
+                                        <li><a href="">Hair Treatment <span class="color-secondary">(9)</span></a></li>
+                                        <li><a href="">Injection <span class="color-secondary">(20)</span></a></li>
+                                        <li><a href="">Lifting Threads <span class="color-secondary">(33)</span></a></li>
+                                        <li><a href="">Numbing cream <span class="color-secondary">(15)</span></a></li>
+                                        <li><a href="">Saxenda <span class="color-secondary">(5)</span></a></li>
+                                        <li><a href="">Sets <span class="color-secondary">(11)</span></a></li>
+                                        <li>
+                                            <a href="">Skin Boosters <span class="color-secondary">(56)</span></a>
+                                            <ul class="d-flex flex-column align-items-start gap-3 mt-3">
+                                                <li><a href="">PDRN <span class="color-secondary">(18)</span></a></li>
+                                                <li><a href="">HA Based <span class="color-secondary">(16)</span></a></li>
+                                                <li><a href="">Others <span class="color-secondary">(25)</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Skincare <span class="color-secondary">(29)</span></a></li>
+                                        <li><a href="">Toxins <span class="color-secondary">(18)</span></a></li>
+                                    </ul>
+                                    <h2 class="sidebar__title title-md mt-5">Filter by price</h2>
+                                    <div class="range-slider mt-4" data-min="0" data-max="1000">
+                                        <div class="range-slider__track"></div>
+                                        <div class="range-slider__output subtitle mt-2">
+                                            Price: <output>$0 — $1,000</output>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-dark mt-4">Filter</button>
+                                    <h2 class="sidebar__title title-md mt-5">Product tags</h2>
+                                    <div class="sidebar__badges d-flex flex-wrap mt-3 gap-2 fs-5">
+                                        <a href="" class="badge rounded-pill text-bg-dark">PDRN</a>
+                                        <a href="" class="badge rounded-pill text-bg-dark">Sets</a>
+                                        <a href="" class="badge rounded-pill text-bg-dark">Numbing cream</a>
+                                        <a href="" class="badge rounded-pill text-bg-dark">PCL Filler</a>
+                                        <a href="" class="badge rounded-pill text-bg-dark">Cleansing and Masks</a>
+                                    </div>
                                 </aside>
                             </div>
                         </div>

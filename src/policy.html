@@ -6,10 +6,11 @@
     <body>
         <div class="wrapper">
             @@include('html/_header.html', {
+            "active": 0,
             "className": "bg-beige"
             })
             <main class="page">
-                <section class="heading pt-5 pb-5 bg-beige">
+                <section class="heading bg-beige">
                     <div class="container">
                         <h1 class="heading__title title-lg text-center fw-light">REFUND POLICY</h1>
                         <nav aria-label="breadcrumb" class="mt-4">
@@ -24,7 +25,7 @@
                 <div class="policy pt-5 pb-5">
                     <div class="container">
                         <div class="row">
-                            <div class="col-9">
+                            <div class="col-xl-9 col-lg-8">
                                 <article class="policy__body">
                                     <p>In order to proceed with your refund, return or exchange request. A video of the defective product or a picture of the wrong received product will be necessary. Without any proof, the request will not be processed.</p>
                                     <ol>
@@ -109,17 +110,19 @@
                                     <p>Faulty assembly or use method.</p>
                                 </article>
                             </div>
-                            <div class="col-3">
-                                <h2 class="policy__title title-md">INFORMATION</h2>
-                                <ul class="policy__list mt-5 ps-0 d-flex flex-column align-items-start gap-2">
-                                    <li><a href="">Terms of Use</a></li>
-                                    <li><a href="">Shipping</a></li>
-                                    <li><a href="">Return Policy</a></li>
-                                    <li><a href="">Payment Policy</a></li>
-                                    <li><a href="">Refund Policy</a></li>
-                                    <li><a href="">Q&R</a></li>
-                                    <li><a href="">Privacy policy</a></li>
-                                </ul>
+                            <div class="col-xl-3 col-lg-4">
+                                <aside class="sidebar ps-lg-5">
+                                    <h2 class="sidebar__title title-md">INFORMATION</h2>
+                                    <ul class="sidebar__list mt-5 ps-0 d-flex flex-column align-items-start gap-3">
+                                        <li><a href="">Terms of Use</a></li>
+                                        <li><a href="">Shipping</a></li>
+                                        <li><a href="">Return Policy</a></li>
+                                        <li><a href="">Payment Policy</a></li>
+                                        <li><a href="">Refund Policy</a></li>
+                                        <li><a href="">Q&R</a></li>
+                                        <li><a href="">Privacy policy</a></li>
+                                    </ul>
+                                </aside>
                             </div>
                         </div>
                     </div>

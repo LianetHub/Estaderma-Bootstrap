@@ -1,5 +1,27 @@
 .policy {
+	.row {
+		--bs-gutter-y: 2rem;
+	}
 	// .policy__body
 	&__body {
+		font-size: rem(18);
+		line-height: math.div(27, 18);
+		& ol {
+			list-style-type: decimal;
+			padding-left: 1em;
+			&:not(:last-child) {
+				margin-bottom: rem(27);
+			}
+		}
+		& ul {
+			&:not(:last-child) {
+				margin-bottom: rem(27);
+			}
+		}
+		& p {
+			&:not(:last-child) {
+				margin-bottom: 0.75rcap;
+			}
+		}
 	}
 }

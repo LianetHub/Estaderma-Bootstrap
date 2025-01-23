@@ -15,15 +15,8 @@
 @font-face {
                             font-family: 'Cormorant';
                             font-display: swap;
-                            src: url("../fonts/Cormorant-Light.woff") format("woff"), url("../fonts/Cormorant-Light.woff2") format("woff2");
-                            font-weight: 300;
-                            font-style: normal;
-                        }
-@font-face {
-                            font-family: 'Cormorant';
-                            font-display: swap;
-                            src: url("../fonts/Cormorant-LightItalic.woff") format("woff"), url("../fonts/Cormorant-LightItalic.woff2") format("woff2");
-                            font-weight: 300;
+                            src: url("../fonts/Cormorant-Italic.woff") format("woff"), url("../fonts/Cormorant-Italic.woff2") format("woff2");
+                            font-weight: 400;
                             font-style: italic;
                         }
 @font-face {
@@ -36,6 +29,13 @@
 @font-face {
                             font-family: 'Cormorant';
                             font-display: swap;
+                            src: url("../fonts/Cormorant-Regular.woff") format("woff"), url("../fonts/Cormorant-Regular.woff2") format("woff2");
+                            font-weight: 400;
+                            font-style: normal;
+                        }
+@font-face {
+                            font-family: 'Cormorant';
+                            font-display: swap;
                             src: url("../fonts/Cormorant-MediumItalic.woff") format("woff"), url("../fonts/Cormorant-MediumItalic.woff2") format("woff2");
                             font-weight: 500;
                             font-style: italic;
@@ -43,15 +43,8 @@
 @font-face {
                             font-family: 'Cormorant';
                             font-display: swap;
-                            src: url("../fonts/Cormorant-Italic.woff") format("woff"), url("../fonts/Cormorant-Italic.woff2") format("woff2");
-                            font-weight: 400;
-                            font-style: italic;
-                        }
-@font-face {
-                            font-family: 'Cormorant';
-                            font-display: swap;
-                            src: url("../fonts/Cormorant-Regular.woff") format("woff"), url("../fonts/Cormorant-Regular.woff2") format("woff2");
-                            font-weight: 400;
+                            src: url("../fonts/Cormorant-Light.woff") format("woff"), url("../fonts/Cormorant-Light.woff2") format("woff2");
+                            font-weight: 300;
                             font-style: normal;
                         }
 @font-face {
@@ -62,11 +55,11 @@
                             font-style: normal;
                         }
 @font-face {
-                            font-family: 'icons';
+                            font-family: 'Cormorant';
                             font-display: swap;
-                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
-                            font-weight: 400;
-                            font-style: normal;
+                            src: url("../fonts/Cormorant-SemiBoldItalic.woff") format("woff"), url("../fonts/Cormorant-SemiBoldItalic.woff2") format("woff2");
+                            font-weight: 600;
+                            font-style: italic;
                         }
 @font-face {
                             font-family: 'Lato';
@@ -78,9 +71,16 @@
 @font-face {
                             font-family: 'Cormorant';
                             font-display: swap;
-                            src: url("../fonts/Cormorant-SemiBoldItalic.woff") format("woff"), url("../fonts/Cormorant-SemiBoldItalic.woff2") format("woff2");
-                            font-weight: 600;
+                            src: url("../fonts/Cormorant-LightItalic.woff") format("woff"), url("../fonts/Cormorant-LightItalic.woff2") format("woff2");
+                            font-weight: 300;
                             font-style: italic;
+                        }
+@font-face {
+                            font-family: 'icons';
+                            font-display: swap;
+                            src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+                            font-weight: 400;
+                            font-style: normal;
                         }
 @font-face {
                             font-family: 'Lato';

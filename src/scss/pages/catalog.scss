@@ -1,8 +1,12 @@
 .catalog {
+	.row {
+		--bs-gutter-x: 4rem;
+		--bs-gutter-y: 4rem;
+	}
 	// .catalog__grid
 	&__grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
 		gap: 2rem;
 	}
 	// .catalog__sidebar
