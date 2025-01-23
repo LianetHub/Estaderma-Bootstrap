@@ -306,7 +306,7 @@
 
 // Стилизация скролла
 
-$scrollbarColor: $beige;
+$scrollbarColor: $secondary;
 $scrollbarHover: darken(
 	$color: $scrollbarColor,
 	$amount: 10,
@@ -316,7 +316,7 @@ $scrollbarHover: darken(
 	width: rem(8);
 }
 ::-webkit-scrollbar-track {
-	background: #252833;
+	background: #fff;
 }
 ::-webkit-scrollbar-thumb {
 	background: $scrollbarColor;
