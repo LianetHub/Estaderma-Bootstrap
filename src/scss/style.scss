@@ -190,6 +190,13 @@ html.with-fancybox body.hide-scrollbar {
 	}
 	// .product__image
 	&__image {
+		padding: 1rem;
+		& img {
+			aspect-ratio: 1;
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
 		&::before {
 			content: "";
 			position: absolute;
