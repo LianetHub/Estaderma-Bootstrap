@@ -179,6 +179,20 @@ $(function () {
         })
     }
 
+    if ($('.product-card__slider ').length > 0) {
+        new Swiper('.product-card__slider ', {
+            slidesPerView: 1,
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            },
+            navigation: {
+                nextEl: '.product-card__next',
+                prevEl: '.product-card__prev'
+            }
+        })
+    }
+
 
     // range sliders
 

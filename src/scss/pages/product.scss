@@ -4,6 +4,29 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	// .product-card__slider
+	&__slider {
+	}
+	// .product-card__prev
+	&__prev {
+		background: $text;
+		color: #fff;
+		border-radius: 50%;
+		width: 3.5rem;
+		height: 3.5rem;
+		@media (any-hover: hover) {
+			&:hover {
+				background: darken($color: $text, $amount: 10);
+			}
+		}
+		&::after {
+			font-size: 1.25rem;
+		}
+	}
+	// .product-card__next
+	&__next {
+		@extend .product-card__prev;
+	}
 	// .product-card__image
 	&__image {
 		width: 100%;

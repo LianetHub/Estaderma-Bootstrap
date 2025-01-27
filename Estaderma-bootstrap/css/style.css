@@ -11,8 +11,24 @@
 @font-face {
   font-family: "Cormorant";
   font-display: swap;
+  src: url("../fonts/Cormorant-BoldItalic.woff") format("woff"), url("../fonts/Cormorant-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-display: swap;
   src: url("../fonts/Cormorant-Light.woff") format("woff"), url("../fonts/Cormorant-Light.woff2") format("woff2");
   font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-display: swap;
+  src: url("../fonts/Cormorant-Medium.woff") format("woff"), url("../fonts/Cormorant-Medium.woff2") format("woff2");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -27,22 +43,6 @@
 @font-face {
   font-family: "Cormorant";
   font-display: swap;
-  src: url("../fonts/Cormorant-LightItalic.woff") format("woff"), url("../fonts/Cormorant-LightItalic.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Cormorant";
-  font-display: swap;
-  src: url("../fonts/Cormorant-Medium.woff") format("woff"), url("../fonts/Cormorant-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Cormorant";
-  font-display: swap;
   src: url("../fonts/Cormorant-MediumItalic.woff") format("woff"), url("../fonts/Cormorant-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
@@ -51,8 +51,16 @@
 @font-face {
   font-family: "Cormorant";
   font-display: swap;
-  src: url("../fonts/Cormorant-BoldItalic.woff") format("woff"), url("../fonts/Cormorant-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
+  src: url("../fonts/Cormorant-Regular.woff") format("woff"), url("../fonts/Cormorant-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  font-display: swap;
+  src: url("../fonts/Cormorant-LightItalic.woff") format("woff"), url("../fonts/Cormorant-LightItalic.woff2") format("woff2");
+  font-weight: 300;
   font-style: italic;
 }
 
@@ -73,10 +81,10 @@
 }
 
 @font-face {
-  font-family: "Cormorant";
+  font-family: "Lato";
   font-display: swap;
-  src: url("../fonts/Cormorant-Regular.woff") format("woff"), url("../fonts/Cormorant-Regular.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -101,14 +109,6 @@
   font-display: swap;
   src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -1572,6 +1572,20 @@ html.with-fancybox body.hide-scrollbar {
   margin-right: auto;
 }
 
+.product-card__prev,
+.product-card__next {
+  background: #4b4036;
+  color: #fff;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.product-card__prev::after,
+.product-card__next::after {
+  font-size: 1.25rem;
+}
+
 .product-card__image {
   width: 100%;
 }
@@ -2123,6 +2137,11 @@ html.with-fancybox body.hide-scrollbar {
   .article__views-item:hover {
     background: #4b4036;
     color: #fff;
+  }
+
+  .product-card__prev:hover,
+  .product-card__next:hover {
+    background: #2d2721;
   }
 
   .product__thumb:hover::before,
